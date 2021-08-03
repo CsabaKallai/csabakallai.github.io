@@ -1,13 +1,18 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="hu">
 <head>
     <title>Kállai Csaba</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,
           maximum-scale=1,minimum-scale=1" />
     <meta charset="utf-8" />
+
+    <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
+    <!--facebook icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" type="text/css" href="css/default.css" />
 </head>
@@ -20,13 +25,16 @@
 
             <div class="intro-wrapper">
                 <div class="nav-wrapper">
-                    <a href="#">Contact</a>
+                    <a href="#">Kapcsolat</a>
                 </div>
                 <div class="left-column">
-                    <img id="profile"  src="images/profile3.jpg" />
+                    <img id="profile" src="images/profile3.jpg" />
                 </div>
                 <div class="right-column">
-                    right
+                    <div id="infos">
+                        <h3>What i do</h3>
+                        <p>Frissen végzett mérnökinformatikus vagyok. Tanulmányaimat az óbudai egyetemen végeztem!</p>
+                    </div>
                 </div>
             </div>
 
@@ -34,16 +42,140 @@
     </section>
 
     <section class="section2">
-        <div class="main-container">About</div>
+        <div class="main-container">
+            <div class="about-wrapper">
+                <div class="about-me">
+                    <h4>More about me</h4>
+                    <p>
+                        feladat 1
+                    </p>
+                    <p>
+                        feladat 2
+                    </p>
+                    <p>
+                        feladat 3
+                    </p>
+
+                    <hr />
+
+                    <h4>Főbb érdeklődési körök</h4>
+                    <p> blabla</p>
+                    <div id="skills">
+                        <ul>
+                            <li>.net</li>
+                            <li>Entity Framework</li>
+                            <li>stb</li>
+                            <li>stb</li>
+                            <li>stb</li>
+                            <li>stb</li>
+                        </ul>
+                        <ul>
+                            <li>stb</li>
+                            <li>stb</li>
+
+                            <li>stb</li>
+                            <li>stb</li>
+                            <li>stb</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="social">
+
+                    <p>
+                        <i class="fa fa-facebook-square" style="font-size:36px"></i>
+                        facebook elérhetőségem
+                    </p>
+                    <p>
+                        <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+                        linkedin elérhetőségem
+                    </p>
+                    <p>
+                        <i class="fa fa-skype" style="font-size:36px"></i>
+                        skype elérhetőségem
+                    </p>
+                    <p>
+                        <i class="fa fa-git-square" style="font-size:36px"></i>
+                        Git elérhetőségem
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="section1">
-        <div class="main-container">Portfolio</div>
+        <div class="main-container">
+            <h3 style="text-align:center">Projektjeim</h3>
+
+            <div class="post-wrapper">
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/profile2.jpg" alt="Kep" />
+                        <div class="post-text">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">
+                                Poszt bevezetés
+                            </p>
+                            <a href="projects/Projectxxx/index.html" target="_blank">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/profile2.jpg" alt="Kep" />
+                        <div class="post-text">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">
+                                Poszt bevezetés
+                            </p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/profile2.jpg" alt="Kep" />
+                        <div class="post-text">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">
+                                Poszt bevezetés
+                                Poszt bevezetés
+                            </p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
 
     <section class="section2">
-        <div class="main-container">Contact</div>
+        <div class="main-container">
+            <h3 style="text-align:center">Kapcsolatfelvétel</h3>
+            <form id="form">
+                <label>Név</label>
+                <input class="input-field" type="text" name="name" />
+
+                <label>Tárgy</label>
+                <input class="input-field" type="text" name="subject" />
+
+                <label>Email</label>
+                <input class="input-field" type="text" name="email" />
+
+                <label>Üzenet</label>
+                <textarea class="input-field" type="text" name="message"></textarea>
+
+                <input id="submit-btn" type="submit" value="Küldés" onclick="sendMail()"  />
+            </form>
+
+        </div>
     </section>
 
 </body>
 </html>
+
