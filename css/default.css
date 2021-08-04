@@ -55,6 +55,10 @@ html, body {
     align-content: center;
 }
 
+    .greeting-wrapper h1 {
+        font-size: 2em;
+    }
+
 .left-column {
     grid-area: left-column;
     padding: 50px;
@@ -201,8 +205,8 @@ html, body {
     }
 
 @media screen and (max-width:1500px) {
-    #infos{
-        width:390px;
+    #infos {
+        width: 390px;
     }
 }
 
@@ -210,17 +214,20 @@ html, body {
     .about-wrapper {
         display: block;
     }
-    .intro-wrapper{
+
+    .intro-wrapper {
         grid-template-columns: 0.5fr 1fr;
     }
+
     .left-column {
         padding: 25px 10px;
         justify-self: center;
     }
 
-    #profile{
-        margin:0 10px;
+    #profile {
+        margin: 0 10px;
     }
+
     #infos {
         width: 350px;
     }
@@ -231,14 +238,20 @@ html, body {
         display: block;
     }
 
+    #infos {
+        margin-bottom: 25px;
+    }
+
     #profile {
         margin: 0 auto;
     }
 }
-@media screen and (max-width:600px){
-    #infos{
-        width:250px;
+
+@media screen and (max-width:600px) {
+    #infos {
+        width: 250px;
     }
+
     #skills img {
         max-width: 30%;
     }
@@ -246,15 +259,36 @@ html, body {
 
 @media screen and (max-width:430px) {
     #skills {
-        min-width:unset;
+        min-width: unset;
     }
-    #skills img{
-        max-width:45%;
-    }
+
+        #skills img {
+            max-width: 45%;
+        }
+
     #infos {
         width: 180px;
     }
 }
 
+@media screen and (max-width:360px) {
+    #infos {
+        padding: 3px;
+    }
 
+    .post-wrapper {
+        grid-template-columns: repeat(auto-fit,250px);
+    }
 
+    #contact {
+        font-size: 1.3em;
+    }
+
+    .social-content img {
+       margin:10px;
+    }
+
+    .social-content p{
+        font-size: 0.9em;
+    }
+}
