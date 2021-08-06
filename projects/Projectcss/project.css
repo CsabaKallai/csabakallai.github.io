@@ -4,42 +4,88 @@ html, body {
     font-family: 'Roboto Mono','sans-serif';
 }
 
+* {
+    box-sizing: border-box
+}
+
 .section1 {
     background-color: #eaeaea;
-    border-bottom: 1px solid #c1c1c1;
+    /*border-bottom: 1px solid #c1c1c1;*/
     overflow: auto;
 }
 
+    .section1 h3,h4 {
+        border-bottom: 1px solid #1a7cd2;
+        display: inline;
+    }
+
+    .section1 p{
+        text-align:justify;
+        min-width:140%;
+        padding:5px;
+    }
 .main-container {
     width: 70%;
-    margin: 0 auto;
+    margin: 10px auto;
 }
+
+.link-wrapper{
+    width:25%;
+}
+
+.link-wrapper p{
+    margin:0;
+    padding:0;
+}
+
 
 .nav-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin:30px;
-    font-size:x-large;
+    margin: 20px 5px;
+    font-size: larger;
 }
     .nav-wrapper a {
         list-style: none;
         text-decoration: none;
-        margin: 0px 15px 0px 5px;
         color: #1a7cd2;
     }
-
-* {
-    box-sizing: border-box
-}
-
-body {
-    margin: 0
-}
-
+    .nav-wrapper img{
+        width:25%;
+    }
 .mySlides {
     display: none
 }
+
+#skills {
+    background-color: #f0ead6;
+    margin: 16px 5px;
+}
+
+    #skills h4 {
+        text-align: center;
+    }
+
+    #skills img {
+        max-width: 25%;
+        height: auto;
+        margin: 10px;
+    }
+
+.skills-content {
+    display: flex;
+}
+
+    .skills-content ul {
+        width: 50%;
+        list-style: none;
+        padding: 0;
+    }
+
+        .skills-content ul li {
+            text-align: center;
+        }
 
 img {
     vertical-align: middle;
@@ -49,7 +95,8 @@ img {
 .slideshow-container {
     max-width: 1000px;
     position: relative;
-    margin: auto;
+    margin: 15px auto;
+    /*grid-area: slideshow-container;*/
 }
 
 /* Next & previous buttons */
