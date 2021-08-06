@@ -1,19 +1,13 @@
 html, body {
     padding: 0;
     margin: 0;
+    background-color: #eaeaea;
     font-family: 'Roboto Mono','sans-serif';
 }
 
 * {
     box-sizing: border-box
 }
-
-.section1 {
-    background-color: #eaeaea;
-    /*border-bottom: 1px solid #c1c1c1;*/
-    overflow: auto;
-}
-
     .section1 h3,h4 {
         border-bottom: 1px solid #1a7cd2;
         display: inline;
@@ -29,6 +23,26 @@ html, body {
     margin: 10px auto;
 }
 
+#ytsection{
+    text-align:center;
+    height:auto;
+    width:100%
+}
+
+
+.responsive-iframe {
+    position: relative;
+    width: 100%;
+    min-height:200px;
+}
+.show{
+    display:block;
+}
+
+.unshow{
+    display:none;
+}
+
 .link-wrapper{
     width:25%;
 }
@@ -38,12 +52,26 @@ html, body {
     padding:0;
 }
 
+#lw1 {
+    grid-area: 1/1;
+    align-self: center;
+    justify-self: center;
+}
 
+#lw2 {
+    grid-area: 1/2;
+    align-self: center;
+    justify-self: center;
+}
+
+#lw3 {
+    grid-area: 1/3;
+    justify-self: flex-end;
+    align-self: center;
+}
 .nav-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 5px;
+    display: grid;
+    grid-template-columns: auto auto 0.8fr;
     font-size: larger;
 }
     .nav-wrapper a {
@@ -51,15 +79,15 @@ html, body {
         text-decoration: none;
         color: #1a7cd2;
     }
-    .nav-wrapper img{
-        width:25%;
+    .nav-wrapper img {
+        width: 30px;
+        height: 50px;
     }
 .mySlides {
     display: none
 }
 
 #skills {
-    background-color: #f0ead6;
     margin: 16px 5px;
 }
 
@@ -68,7 +96,7 @@ html, body {
     }
 
     #skills img {
-        max-width: 25%;
+        max-width: 18%;
         height: auto;
         margin: 10px;
     }
@@ -95,8 +123,13 @@ img {
 .slideshow-container {
     max-width: 1000px;
     position: relative;
-    margin: 15px auto;
-    /*grid-area: slideshow-container;*/
+    margin: 50px auto;
+    border: 1.5px solid;
+}
+
+.slideshow-container img{
+    width:100%;
+    max-height:750px;
 }
 
 /* Next & previous buttons */
@@ -187,5 +220,21 @@ img {
 @media only screen and (max-width: 300px) {
     .prev, .next, .text {
         font-size: 11px
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #lw3 a{
+        font-size:0.7em;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #lw3 a {
+        font-size: 0.54em;
+    }
+
+    #lw1, #lw2 {
+        justify-self: flex-start;
     }
 }

@@ -17,29 +17,32 @@
     <link rel="stylesheet" type="text/css" href="../Projectcss/project.css" />
 </head>
 <body>
-    <section class="section1">
+    <section>
         <div class="main-container">
             <!--<div>-->
             <div class="nav-wrapper">
-                <div class="link-wrapper">
-
+                <div id="lw1" class="link-wrapper">
                     <p>
-                        <a href="https://www.youtube.com/" target="_blank">
-                            <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSIwIC03NyA1MTIuMDAyMTMgNTEyIiB3aWR0aD0iNTEycHQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTUwMS40NTMxMjUgNTYuMDkzNzVjLTUuOTAyMzQ0LTIxLjkzMzU5NC0yMy4xOTUzMTMtMzkuMjIyNjU2LTQ1LjEyNS00NS4xMjg5MDYtNDAuMDY2NDA2LTEwLjk2NDg0NC0yMDAuMzMyMDMxLTEwLjk2NDg0NC0yMDAuMzMyMDMxLTEwLjk2NDg0NHMtMTYwLjI2MTcxOSAwLTIwMC4zMjgxMjUgMTAuNTQ2ODc1Yy0yMS41MDc4MTMgNS45MDIzNDQtMzkuMjIyNjU3IDIzLjYxNzE4Ny00NS4xMjUgNDUuNTQ2ODc1LTEwLjU0Mjk2OSA0MC4wNjI1LTEwLjU0Mjk2OSAxMjMuMTQ4NDM4LTEwLjU0Mjk2OSAxMjMuMTQ4NDM4czAgODMuNTAzOTA2IDEwLjU0Mjk2OSAxMjMuMTQ4NDM3YzUuOTA2MjUgMjEuOTI5Njg3IDIzLjE5NTMxMiAzOS4yMjI2NTYgNDUuMTI4OTA2IDQ1LjEyODkwNiA0MC40ODQzNzUgMTAuOTY0ODQ0IDIwMC4zMjgxMjUgMTAuOTY0ODQ0IDIwMC4zMjgxMjUgMTAuOTY0ODQ0czE2MC4yNjE3MTkgMCAyMDAuMzI4MTI1LTEwLjU0Njg3NWMyMS45MzM1OTQtNS45MDIzNDQgMzkuMjIyNjU2LTIzLjE5NTMxMiA0NS4xMjg5MDYtNDUuMTI1IDEwLjU0Mjk2OS00MC4wNjY0MDYgMTAuNTQyOTY5LTEyMy4xNDg0MzggMTAuNTQyOTY5LTEyMy4xNDg0MzhzLjQyMTg3NS04My41MDc4MTItMTAuNTQ2ODc1LTEyMy41NzAzMTJ6bTAgMCIgZmlsbD0iI2YwMCIvPjxwYXRoIGQ9Im0yMDQuOTY4NzUgMjU2IDEzMy4yNjk1MzEtNzYuNzU3ODEyLTEzMy4yNjk1MzEtNzYuNzU3ODEzem0wIDAiIGZpbGw9IiNmZmYiLz48L3N2Zz4=" />
+                        <a>
+                            <img onclick="myFunction('ytsection')" src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSIwIC03NyA1MTIuMDAyMTMgNTEyIiB3aWR0aD0iNTEycHQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTUwMS40NTMxMjUgNTYuMDkzNzVjLTUuOTAyMzQ0LTIxLjkzMzU5NC0yMy4xOTUzMTMtMzkuMjIyNjU2LTQ1LjEyNS00NS4xMjg5MDYtNDAuMDY2NDA2LTEwLjk2NDg0NC0yMDAuMzMyMDMxLTEwLjk2NDg0NC0yMDAuMzMyMDMxLTEwLjk2NDg0NHMtMTYwLjI2MTcxOSAwLTIwMC4zMjgxMjUgMTAuNTQ2ODc1Yy0yMS41MDc4MTMgNS45MDIzNDQtMzkuMjIyNjU3IDIzLjYxNzE4Ny00NS4xMjUgNDUuNTQ2ODc1LTEwLjU0Mjk2OSA0MC4wNjI1LTEwLjU0Mjk2OSAxMjMuMTQ4NDM4LTEwLjU0Mjk2OSAxMjMuMTQ4NDM4czAgODMuNTAzOTA2IDEwLjU0Mjk2OSAxMjMuMTQ4NDM3YzUuOTA2MjUgMjEuOTI5Njg3IDIzLjE5NTMxMiAzOS4yMjI2NTYgNDUuMTI4OTA2IDQ1LjEyODkwNiA0MC40ODQzNzUgMTAuOTY0ODQ0IDIwMC4zMjgxMjUgMTAuOTY0ODQ0IDIwMC4zMjgxMjUgMTAuOTY0ODQ0czE2MC4yNjE3MTkgMCAyMDAuMzI4MTI1LTEwLjU0Njg3NWMyMS45MzM1OTQtNS45MDIzNDQgMzkuMjIyNjU2LTIzLjE5NTMxMiA0NS4xMjg5MDYtNDUuMTI1IDEwLjU0Mjk2OS00MC4wNjY0MDYgMTAuNTQyOTY5LTEyMy4xNDg0MzggMTAuNTQyOTY5LTEyMy4xNDg0MzhzLjQyMTg3NS04My41MDc4MTItMTAuNTQ2ODc1LTEyMy41NzAzMTJ6bTAgMCIgZmlsbD0iI2YwMCIvPjxwYXRoIGQ9Im0yMDQuOTY4NzUgMjU2IDEzMy4yNjk1MzEtNzYuNzU3ODEyLTEzMy4yNjk1MzEtNzYuNzU3ODEzem0wIDAiIGZpbGw9IiNmZmYiLz48L3N2Zz4=" />
                         </a>
                     </p>
                 </div>
-                <div class="link-wrapper">
-
+                <div id="lw2" class="link-wrapper">
                     <p>
                         <a href="https://github.com/CsabaKallai/SchedulingTheOptimalTournament" target="_blank">
                             <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMjU2IDBjLTE0MC42MDkzNzUgMC0yNTYgMTE1LjM5MDYyNS0yNTYgMjU2IDAgMTE5Ljk4ODI4MSA4NC4xOTUzMTIgMjI4Ljk4NDM3NSAxOTYgMjU2di04NC42OTUzMTJjLTExLjA3ODEyNSAyLjQyNTc4MS0yMS4yNzM0MzggMi40OTYwOTMtMzIuNTUwNzgxLS44MjgxMjYtMTUuMTI4OTA3LTQuNDY0ODQzLTI3LjQyMTg3NS0xNC41NDI5NjgtMzYuNTQ2ODc1LTI5LjkxMDE1Ni01LjgxNjQwNi05LjgxMjUtMTYuMTI1LTIwLjQ1MzEyNS0yNi44Nzg5MDYtMTkuNjcxODc1bC0yLjYzNjcxOS0yOS44ODI4MTJjMjMuMjUzOTA2LTEuOTkyMTg4IDQzLjM3MTA5MyAxNC4xNjc5NjkgNTUuMzEyNSAzNC4yMzA0NjkgNS4zMDQ2ODcgOC45MjE4NzQgMTEuNDEwMTU2IDE0LjE1MjM0MyAxOS4yNDYwOTMgMTYuNDY0ODQzIDcuNTc0MjE5IDIuMjMwNDY5IDE1LjcwNzAzMiAxLjE2MDE1NyAyNS4xODM1OTQtMi4xODc1IDIuMzc4OTA2LTE4Ljk3MjY1NiAxMS4wNzAzMTMtMjYuMDc0MjE5IDE3LjYzNjcxOS0zNi4wNzQyMTl2LS4wMTU2MjRjLTY2LjY3OTY4Ny05Ljk0NTMxMy05My4yNTM5MDYtNDUuMzIwMzEzLTEwMy44MDA3ODEtNzMuMjQyMTg4LTEzLjk3NjU2My0zNy4wNzQyMTktNi40NzY1NjMtODMuMzkwNjI1IDE4LjIzODI4MS0xMTIuNjYwMTU2LjQ4MDQ2OS0uNTcwMzEzIDEuMzQ3NjU2LTIuMDYyNSAxLjAxMTcxOS0zLjEwNTQ2OS0xMS4zMzIwMzItMzQuMjMwNDY5IDIuNDc2NTYyLTYyLjU0Njg3NSAyLjk4NDM3NS02NS41NTA3ODEgMTMuMDc4MTI1IDMuODY3MTg3IDE1LjIwMzEyNS0zLjg5MDYyNSA1Ni44MDg1OTMgMjEuMzg2NzE4bDcuMTkxNDA3IDQuMzIwMzEzYzMuMDA3ODEyIDEuNzkyOTY5IDIuMDYyNS43Njk1MzEgNS4wNzAzMTIuNTQyOTY5IDE3LjM3MTA5NC00LjcxODc1IDM1LjY4MzU5NC03LjMyNDIxOSA1My43MjY1NjMtNy41NTg1OTQgMTguMTc5Njg3LjIzNDM3NSAzNi4zNzUgMi44Mzk4NDQgNTQuNDY0ODQ0IDcuNzVsMi4zMjgxMjQuMjM0Mzc1Yy0uMjAzMTI0LS4wMzEyNS42MzI4MTMtLjE0ODQzNyAyLjAzNTE1Ny0uOTg0Mzc1IDUxLjk3MjY1Ni0zMS40ODA0NjkgNTAuMTA1NDY5LTIxLjE5MTQwNiA2NC4wNDI5NjktMjUuNzIyNjU2LjUwMzkwNiAzLjAwNzgxMiAxNC4xMjg5MDYgMzEuNzg1MTU2IDIuOTE3OTY4IDY1LjU4MjAzMS0xLjUxMTcxOCA0LjY1NjI1IDQ1LjA1ODU5NCA0Ny4zMDA3ODEgMTkuMjQ2MDk0IDExNS43NTM5MDYtMTAuNTQ2ODc1IDI3LjkzMzU5NC0zNy4xMTcxODggNjMuMzA4NTk0LTEwMy43OTY4NzUgNzMuMjUzOTA3di4wMTU2MjRjOC41NDY4NzUgMTMuMDI3MzQ0IDE4LjgxNjQwNiAxOS45NTcwMzIgMTguNzYxNzE5IDQ2LjgzMjAzMnYxMDUuNzIyNjU2YzExMS44MDg1OTQtMjcuMDE1NjI1IDE5Ni0xMzYuMDExNzE5IDE5Ni0yNTYgLjAwMzkwNi0xNDAuNjA5Mzc1LTExNS4zODY3MTktMjU2LTI1NS45OTYwOTQtMjU2em0wIDAiLz48L3N2Zz4=" />
                         </a>
                     </p>
                 </div>
-                <div>
+                <div id="lw3">
                     <a href="../../index.html#projects">Vissza a portfólióhoz</a>
                 </div>
+            </div>
+            <div id="ytsection" class="unshow">
+                <iframe class="responsive-iframe"
+                        src="https://www.youtube.com/embed/z0Idvju7uXk" title="YouTube video player"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <section class="section1">
                 <div style="margin-left:10px;" class="main-container">
@@ -58,10 +61,10 @@
                                     <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IHg9IjQiIHk9IjY1LjA0OCIgc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIHdpZHRoPSI1MDQiIGhlaWdodD0iMzgxLjg5NiIvPg0KPGc+DQoJPHBhdGggc3R5bGU9ImZpbGw6I0FBQzFDRTsiIGQ9Ik01MDQsNjkuMDQ4djM3My45MDRIOFY2OS4wNDhINTA0IE01MTIsNjEuMDQ4SDB2Mzg5LjkwNGg1MTJWNjEuMDQ4eiIvPg0KCTxyZWN0IHg9IjIuOTkyIiB5PSIxMjYuODQ4IiBzdHlsZT0iZmlsbDojQUFDMUNFOyIgd2lkdGg9IjUwNS44NCIgaGVpZ2h0PSI4Ii8+DQo8L2c+DQo8Y2lyY2xlIHN0eWxlPSJmaWxsOiNFMDRGNUY7IiBjeD0iNDguMDgiIGN5PSI5OC41MDQiIHI9IjEyLjU4NCIvPg0KPGNpcmNsZSBzdHlsZT0iZmlsbDojMjVCNkQyOyIgY3g9Ijg5LjMxMiIgY3k9Ijk4LjUwNCIgcj0iMTIuNTg0Ii8+DQo8Y2lyY2xlIHN0eWxlPSJmaWxsOiMzMkJFQTY7IiBjeD0iMTMwLjU2OCIgY3k9Ijk4LjUwNCIgcj0iMTIuNTg0Ii8+DQo8Zz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojNDE1RTcyOyIgZD0iTTEwNi4xMzYsMjkzLjAxNmwtNS42LDE4LjMyOEg4OC4zODRsMjAuNzI4LTY0LjY3MmgxNS4wNjRsMjEuMDA4LDY0LjY3MkgxMzIuNTJsLTUuODQ4LTE4LjMyOA0KCQlIMTA2LjEzNnogTTEyNC42NDgsMjg0LjA5NmwtNS4wODgtMTUuOTI4Yy0xLjI0LTMuOTI4LTIuMjk2LTguMzQ0LTMuMjU2LTEyLjA4OGgtMC4xOTJjLTAuOTYsMy43NDQtMS45MTIsOC4yNDgtMy4wNzIsMTIuMDg4DQoJCWwtNC45ODQsMTUuOTI4SDEyNC42NDh6Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6IzQxNUU3MjsiIGQ9Ik0xNTMuOTQ0LDI5OC40ODhjNC43ODQsMi42NjQsMTAuMTYsNC4wODgsMTUuNjQsNC4xMjhjNy41NzYsMCwxMS44MDgtMy41NDQsMTEuODA4LTguOA0KCQljMC00Ljg5Ni0zLjI2NC03Ljc3Ni0xMS41MTItMTAuNzUyYy0xMC42NDgtMy44MzItMTcuNDY0LTkuNDk2LTE3LjQ2NC0xOC44MDhjMC0xMC41NTIsOC44LTE4LjYxNiwyMi44MzItMTguNjE2DQoJCWM1LjM2LTAuMTQ0LDEwLjY4OCwwLjk2OCwxNS41MzYsMy4yNjRsLTIuODY0LDkuNDk2Yy0zLjk2OC0yLjA1Ni04LjM4NC0zLjExMi0xMi44NTYtMy4wNzJjLTcuNDg4LDAtMTAuNzUyLDQtMTAuNzUyLDcuNzc2DQoJCWMwLDQuOTg0LDMuNzQ0LDcuMjg4LDEyLjM4NCwxMC42NDhjMTEuMiw0LjIxNiwxNi42OTYsOS44OCwxNi42OTYsMTkuMmMwLDEwLjM2LTcuODY0LDE5LjM4NC0yNC41NiwxOS4zODQNCgkJYy02LjA1NiwwLjA2NC0xMi4wNC0xLjMxMi0xNy40NjQtNEwxNTMuOTQ0LDI5OC40ODh6Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6IzQxNUU3MjsiIGQ9Ik0yMDQuMDU2LDI0Ny41NDRjNS45Ni0wLjk3NiwxMi0xLjQzMiwxOC4wNC0xLjM0NGM2Ljc4NC0wLjUyLDEzLjUzNiwxLjM1MiwxOS4wOTYsNS4yOA0KCQljNC4xNDQsMy41NzYsNi40NjQsOC44MTYsNi4zMjgsMTQuMjg4YzAuMjY0LDUuNDY0LTEuNzY4LDEwLjc4NC01LjYsMTQuNjhjLTUuNjQ4LDQuODg4LTEyLjk4NCw3LjM3Ni0yMC40NCw2LjkxMg0KCQljLTEuOTI4LDAuMDMyLTMuODU2LTAuMDk2LTUuNzYtMC4zODR2MjQuMzY4aC0xMS42NjRMMjA0LjA1NiwyNDcuNTQ0TDIwNC4wNTYsMjQ3LjU0NHogTTIxNS43NiwyNzcuNjcyDQoJCWMxLjg5NiwwLjM5MiwzLjgyNCwwLjU2LDUuNzYsMC40ODhjOC44LDAsMTQuMi00LjMyLDE0LjItMTEuODk2YzAtNy4yLTQuOTkyLTExLjA0LTEzLjE1Mi0xMS4wNA0KCQljLTIuMjg4LTAuMDQ4LTQuNTY4LDAuMTQ0LTYuODE2LDAuNTc2TDIxNS43NiwyNzcuNjcyeiIvPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiM0MTVFNzI7IiBkPSJNMjQyLjE2OCwzMDQuOGMtMC4yMDgtMy45NjgsMi44NC03LjM2LDYuODE2LTcuNTY4YzAuMTYtMC4wMDgsMC4zMi0wLjAwOCwwLjQ4LTAuMDA4DQoJCWM0LjE4NCwwLjEzNiw3LjQ3MiwzLjY0LDcuMzM2LDcuODI0Yy0wLjEyOCwzLjk5Mi0zLjMzNiw3LjItNy4zMzYsNy4zMzZjLTMuOTc2LDAuMDU2LTcuMjQ4LTMuMTItNy4zMDQtNy4wOTYNCgkJQzI0Mi4xNiwzMDUuMTI4LDI0Mi4xNiwzMDQuOTYsMjQyLjE2OCwzMDQuOHoiLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojNDE1RTcyOyIgZD0iTTI2Ni43NDQsMzExLjM0NHYtNjQuNjcyaDEzLjQzMmwxNi42OTYsMjcuNzI4YzQuMTY4LDYuOTY4LDcuODU2LDE0LjIwOCwxMS4wNCwyMS42OGgwLjE4NA0KCQljLTAuOC04LjYzMi0xLjA1Ni0xNi45ODQtMS4wNTYtMjYuODU2di0yMi41NTJoMTAuOTM2djY0LjY3MmgtMTIuMTg0bC0xNi44OC0yOC40Yy00LjI4OC03LjIzMi04LjE2LTE0LjY5Ni0xMS42MDgtMjIuMzYNCgkJbC0wLjI4OCwwLjA5NmMwLjQ4LDguMzUyLDAuNTc2LDE2Ljg4OCwwLjU3NiwyNy41MzZ2MjMuMTI4SDI2Ni43NDR6Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6IzQxNUU3MjsiIGQ9Ik0zNjcuODE2LDI4Mi42NTZoLTI0LjM2OHYxOWgyNy4yNHY5LjY4OEgzMzEuNjR2LTY0LjY3MmgzNy42djkuNjk2aC0yNS43OTJ2MTYuNjk2aDI0LjM2OFYyODIuNjU2eg0KCQkiLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojNDE1RTcyOyIgZD0iTTM5NC40LDI1Ni41NkgzNzZ2LTkuODg4aDQ4Ljh2OS44ODhoLTE4LjU3NnY1NC43OTJIMzk0LjRWMjU2LjU2eiIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" />
                                 </li>
                                 <li>
-                                    <img src="../../images/linq.jpg" alt="Alternate Text" />
+                                    <img src="../../images/linq.JPG" alt="Alternate Text" />
                                 </li>
                                 <li>
-                                    <img src="../../images/cache.jpg"/>
+                                    <img src="../../images/cache.JPG" />
                                 </li>
                             </ul>
                             <ul>
@@ -83,18 +86,18 @@
             <div class="slideshow-container">
 
                 <div class="mySlides fade">
-                    <img src="images/page1.jpg" style="width:100%">
+                    <img src="images/page1.jpg">
                 </div>
 
                 <div class="mySlides fade">
-                    <img src="images/page2.jpg" style="width:100%">
+                    <img src="images/page2.jpg">
                 </div>
 
                 <div class="mySlides fade">
-                    <img src="images/page3.jpg" style="width:100%">
+                    <img src="images/page3.jpg">
                 </div>
                 <div class="mySlides fade">
-                    <img src="images/page4.jpg" style="width:100%">
+                    <img src="images/page4.jpg">
                 </div>
 
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>

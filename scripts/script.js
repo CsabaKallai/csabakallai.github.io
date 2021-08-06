@@ -24,3 +24,13 @@ var slideIndex = 1;
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
     }
+
+function myFunction(id) {
+        var x = document.getElementById(id);
+        if (x.className == "unshow") {
+            x.className = "show";
+        }
+        else {
+            x.className = "unshow";
+        }
+    }
