@@ -11,6 +11,7 @@ html, body {
     .section1 h3,h4 {
         border-bottom: 1px solid #1a7cd2;
         display: inline;
+        padding-bottom: 5px;
     }
 
     .section1 p{
@@ -23,17 +24,18 @@ html, body {
     margin: 10px auto;
 }
 
-#ytsection{
-    text-align:center;
-    height:auto;
-    width:100%
+#ytsection {
+    text-align: center;
+    height: auto;
+    width: 100%;
+    grid-template-rows: auto auto;
 }
 
 
 .responsive-iframe {
     position: relative;
     width: 100%;
-    min-height:200px;
+    min-height:300px;
 }
 .show{
     display:block;
@@ -50,6 +52,17 @@ html, body {
 .link-wrapper p{
     margin:0;
     padding:0;
+}
+
+.close-wrapper {
+    grid-area: 1/1;
+    float: right;
+    margin: 0px 20px;
+}
+
+.close-wrapper img{
+    width:25px;
+    height:40px;
 }
 
 #lw1 {

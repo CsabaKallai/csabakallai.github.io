@@ -30,7 +30,11 @@ function myFunction(id) {
         if (x.className == "unshow") {
             x.className = "show";
         }
-        else {
+    }
+
+function closingyt(id) {
+        var x = document.getElementById(id);
+        if (x.className == "show") {
             x.className = "unshow";
         }
     }
