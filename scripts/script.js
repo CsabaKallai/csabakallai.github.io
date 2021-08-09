@@ -28,7 +28,7 @@ var slideIndex = 1;
 function myFunction(id) {
         var x = document.getElementById(id);
         if (x.className == "unshow") {
-            x.className = "show";
+            x.className = " show";
         }
     }
 
@@ -38,3 +38,39 @@ function closingyt(id) {
             x.className = "unshow";
         }
     }
+
+var previoussection;
+var previoussectionid;
+function OpenSection(id, h4) {
+	
+	var menu = document.getElementById('menuid').clientWidth; 
+      	var x;
+	var y = document.getElementById(h4);
+	if ( menu < 650) {
+		x = document.getElementById( (id+='1') );
+		
+	}
+	else {
+		x = document.getElementById(id);
+	}
+	if (previoussection != null && x != previoussection) {
+		previoussectionid.classList.remove("active");
+		previoussection.classList.add("unshow");
+            		previoussection.classList.remove("show");
+	}
+        	if (x.classList.contains("unshow")) {
+            		x.classList.add("show");
+            		x.classList.remove("unshow");
+            		y.classList.add("active");
+        	}
+        	else {
+		x.classList.add("unshow");
+            		x.classList.remove("show");
+		y.classList.remove("active");
+        	}
+
+		
+		previoussection = x;
+		previoussectionid = y;
+
+}

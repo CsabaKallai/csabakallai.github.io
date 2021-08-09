@@ -65,8 +65,7 @@ html, body {
 }
 
 #profile {
-    width: 181px;
-    height: 247px;
+    height: 16em;
     border: 2px solid #c1c1c1;
     display: block;
     margin: 0 auto;
@@ -96,28 +95,106 @@ html, body {
 .about-me {
     grid-area: about-me;
     margin-right: 30px;
+    border: 1.5px solid#17a2b8;
+    padding: 15px;
+    background-color: rgba(251,249, 243, 0.8);
+    border-radius: 10px 10px 10px 10px;
 }
+
+    .about-me p {
+        text-align: justify;
+    }
 
 .about-wrapper {
     display: grid;
-    /*grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));*/
     padding: 50px 0px 50px 0px;
     grid-template-columns: 1fr;
-    grid-template-areas: 'about-me skills';
+    grid-template-areas: 
+        'about-me skills'
+}
+
+.menu {
+    display: grid;
+    grid-area:menu;
+    grid-template-columns: auto;
+    grid-gap:10px;
+    grid-template-areas: 
+        'database parallel test algorythm'
+        'menu-items menu-items menu-items menu-items';
+}
+
+.menu div{
+    width:100%;
+}
+.menu-items{
+    grid-area:menu-items;
+}
+
+#database, #parallel, #test, #algorythm{
+    margin:0;
+}
+.database {
+    grid-area: database;
+}
+
+.parallel{
+    grid-area: parallel;
+}
+
+.test{
+    grid-area:test;
+}
+
+.algorythm {
+    grid-area: algorythm;
+    width:max-content;
+}
+
+.collapsible {
+    background-color: rgba(234,221,184,1);
+    cursor: pointer;
+    padding: 18px;
+    border-radius: 10px 10px 10px 10px;
+    border: 1.5px solid #17a2b8;
+    text-align: left;
+    display: inline-block;
+}
+
+.active.collapsible:after {
+    content: "\2212";
+}
+
+.collapsible:hover {
+    background-color: aliceblue;
+}
+
+.collapsible::after {
+    content: '\002B';
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+#adatbazis {
+    margin: 0;
 }
 
 #skills {
-    background-color: #f0ead6;
+    background-color: rgba(251,249, 243, 0.8);
     grid-area: skills;
     min-width: 320px;
+    border-radius: 10px 10px 10px 10px;
+    border: 1.5px solid #17a2b8;
 }
 
-    #skills h4 {
+    #skills h3 {
         text-align: center;
+        padding: 1em;
+        margin-bottom: 0px;
     }
 
     #skills img {
-        max-width: 25%;
+        width: 3em;
         height: auto;
         margin: 10px;
     }
@@ -188,6 +265,14 @@ html, body {
     font-size: 16px;
 }
 
+.show {
+    display: block;
+}
+
+.unshow {
+    display: none;
+}
+
 .social-content {
     display: flex;
     margin: 5px;
@@ -214,6 +299,10 @@ html, body {
         display: block;
     }
 
+    .about-me {
+        margin: 0;
+    }
+
     .intro-wrapper {
         grid-template-columns: 0.5fr 1fr;
     }
@@ -230,9 +319,16 @@ html, body {
     #infos {
         width: 350px;
     }
+
+    #skills {
+        margin-top: 30px;
+    }
+    #skills img{
+        width:4em;
+    }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:980px) {
     .intro-wrapper {
         display: block;
     }
@@ -246,6 +342,11 @@ html, body {
     }
 }
 
+@media screen and (max-width:940px) {
+    .menu {
+        display: block;
+    }
+}
 @media screen and (max-width:600px) {
     #infos {
         width: 250px;
@@ -284,10 +385,10 @@ html, body {
     }
 
     .social-content img {
-       margin:10px;
+        margin: 10px;
     }
 
-    .social-content p{
+    .social-content p {
         font-size: 0.9em;
     }
 }

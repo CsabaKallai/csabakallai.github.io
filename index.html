@@ -28,13 +28,13 @@
                     <a href="#contact">Kapcsolat</a>
                 </div>
                 <div class="left-column">
-                    <img id="profile" src="" alt="profilkép" />
+                    <img id="profile" src="images/profile5.jpg" alt="profilkép" />
                 </div>
                 <div class="right-column">
                     <div id="infos">
                         <h3 style="text-align:center">Magamról</h3>
                         <p>Pályakezdő mérnökinformatikus vagyok.</p>
-                        <p>Tanulmányaimat az Óbudai egyetemen végeztem,</p>
+                        <p>Tanulmányaimat az Óbudai Egyetemen végeztem,</p>
                         <p>Szoftvertervezés és fejlesztés specializáción.</p>
                     </div>
                 </div>
@@ -51,17 +51,20 @@
                     <p>
                         2017 óta foglalkozom szoftverfejlesztéssel.
                     </p>
-                    <p style="text-align:justify">
+                    <p>
                         Egyetemi éveim alatt betekintést nyerhettem a szoftverfejlesztés és tesztelés elméleti
                         és gyakorlati ismereteibe.
                     </p>
                     <p>
                         A legtöbb projekt amiben részt vettem C# nyelven íródott, azonban megismerkedtem a Java, C++,
-                        Javascript alapjaival is.
+                        Javascript, HTML, CSS, SQL alapjaival is.
+                    </p>
+                    <p>
+                        Megismerkedtem számos programozási elvvel. Többek között a tervezési minták hasznosságával, clean code, S.O.L.I.D elvek...
                     </p>
                 </div>
                 <div class="skills" id="skills">
-                    <h3 style="text-align:center">Főbb érdeklődési körök</h3>
+                    <h3>Főbb érdeklődési körök</h3>
                     <div class="skills-content">
                         <ul>
                             <li>
@@ -100,6 +103,84 @@
                     </div>
                 </div>
             </div>
+                <div id="menuid" class="menu"   >
+                    <div class="database">
+                        <h4 id="h4" class="collapsible" onclick="OpenSection('database','h4')">Adatbázis ismeretek</h4>
+                        <div id="database1" class="about-me unshow">
+                            <p>
+                                Egy féléves tárgy keretein belül felépítettem egy adatbázist, az Oracle rendszerében.
+                            </p>
+                            <p>
+                                Ez idő alatt a legtöbb, leggyakrabban használt SQL parancsot megismertem.
+                                A féléves projektben szerepelt még eljárások, függvények és nézetek készítése is.
+                            </p>
+                            <h5>Entity framework</h5>
+                            <ul>
+                                <li>Code first</li>
+                                <li>Database first</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="parallel">
+                        <h4 id="ph4" class="collapsible" onclick="OpenSection('parallel','ph4')">Párhuzamosítási ismeretek</h4>
+                        <div id="parallel1" class="about-me unshow">
+                            <p>
+                                Párhuzamosítási ismereteim
+                            </p>
+                        </div>
+                    </div>
+                    <div class="test">
+                        <h4 id="th4" class="collapsible" onclick="OpenSection('test','th4')">Tesztelési ismeretek</h4>
+                        <div id="test1" class="about-me unshow">
+                            <p>
+                                Tesztelési ismereteim
+                            </p>
+                        </div>
+                    </div>
+                    <div class="algorythm">
+                        <h4 id="ah4" class="collapsible" onclick="OpenSection('algorythm','ah4')">Algoritmusok</h4>
+                        <div id="algorythm1" class="about-me unshow">
+                            <p>
+                                Algoritmizálási ismereteim
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menu-items">
+                        <div id="database" class="about-me unshow">
+                            <p>
+                                Egy féléves tárgy keretein belül felépítettem egy adatbázist, az Oracle rendszerében.
+                            </p>
+                            <p>
+                                Ez idő alatt a legtöbb, leggyakrabban használt SQL parancsot megismertem.
+                                A féléves projektben szerepelt még eljárások, függvények és nézetek készítése is.
+                            </p>
+                            <h5>Entity framework</h5>
+                            <ul>
+                                <li>Code first</li>
+                                <li>Database first</li>
+                            </ul>
+                        </div>
+
+                        <div id="parallel" class="about-me unshow">
+                            <p>
+                                Párhuzamosítási ismereteim
+                            </p>
+                        </div>
+
+
+                        <div id="test" class="about-me unshow">
+                            <p>
+                                Tesztelési ismereteim
+                            </p>
+                        </div>
+
+                        <div id="algorythm" class="about-me unshow">
+                            <p>
+                                Algoritmizálási ismereteim
+                            </p>
+                        </div>
+                    </div>
+                </div>
         </div>
     </section>
 
@@ -111,7 +192,7 @@
             <div class="post-wrapper">
                 <div>
                     <div class="post">
-                        <img class="thumbnail" src="projects/ProjectLOK/images/title.jpg"/>
+                        <img class="thumbnail" src="projects/ProjectLOK/images/title.jpg" />
                         <div class="post-text">
                             <h5 class="post-title">Ligák optimális kialakítása</h5>
                             <p class="post-intro">
@@ -124,7 +205,7 @@
 
                 <div>
                     <div class="post">
-                        <img class="thumbnail" src="" alt="kep"/>
+                        <img class="thumbnail" src="" alt="feltöltés alatt" />
                         <div class="post-text">
                             <h5 class="post-title">Projekt cím</h5>
                             <p class="post-intro">
@@ -137,7 +218,7 @@
 
                 <div>
                     <div class="post">
-                        <img class="thumbnail" src="" alt="kep"/>
+                        <img class="thumbnail" src="" alt="feltöltés alatt" />
                         <div class="post-text">
                             <h5 class="post-title">Projekt cím</h5>
                             <p class="post-intro">
@@ -194,4 +275,5 @@
 
 </body>
 </html>
+<script src="scripts/script.js"></script>
 
