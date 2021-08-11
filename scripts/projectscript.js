@@ -13,8 +13,8 @@ var slideIndex = 1;
         var i;
         var slides = document.getElementsByClassName("mySlides");
         var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
+        if (n > slides.length) { slideIndex = 1; }
+        if (n < 1) { slideIndex = slides.length; }
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
@@ -25,7 +25,7 @@ var slideIndex = 1;
         dots[slideIndex - 1].className += " active";
     }
 
-    const ytsection = document.getElementById('ytsection');
+    var ytsection = document.getElementById('ytsection');
 function openyt() {
     if (ytsection.className == "unshow") {
         ytsection.className = "show";

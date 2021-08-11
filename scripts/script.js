@@ -1,13 +1,12 @@
 
-
 var previoussection;
 var previoussectionid;
-const menu = document.getElementById('menuid');
+var menu = document.getElementById('menuid');
 function OpenSection(id, h4) {
 	
-	const menuwidth = menu.clientWidth; 
-    var x;
-	let y = document.getElementById(h4);
+	var menuwidth = menu.clientWidth; 
+  var x;
+	var y = document.getElementById(h4);
 	if ( menuwidth < 650) {
 		x = document.getElementById( (id+='1') );
 	}
