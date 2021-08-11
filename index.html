@@ -34,7 +34,7 @@
                     <div id="infos">
                         <h3 style="text-align:center">Magamról</h3>
                         <p>Pályakezdő mérnökinformatikus vagyok.</p>
-                        <p>Tanulmányaimat az Óbudai Egyetemen végeztem,</p>
+                        <p>Tanulmányaimat az Óbudai Egyetemen végeztem 2021-ben,</p>
                         <p>Szoftvertervezés és fejlesztés specializáción.</p>
                     </div>
                 </div>
@@ -103,84 +103,158 @@
                     </div>
                 </div>
             </div>
-                <div id="menuid" class="menu"   >
-                    <div class="database">
-                        <h4 id="h4" class="collapsible" onclick="OpenSection('database','h4')">Adatbázis ismeretek</h4>
-                        <div id="database1" class="about-me unshow">
-                            <p>
-                                Egy féléves tárgy keretein belül felépítettem egy adatbázist, az Oracle rendszerében.
-                            </p>
-                            <p>
-                                Ez idő alatt a legtöbb, leggyakrabban használt SQL parancsot megismertem.
-                                A féléves projektben szerepelt még eljárások, függvények és nézetek készítése is.
-                            </p>
-                            <h5>Entity framework</h5>
-                            <ul>
-                                <li>Code first</li>
-                                <li>Database first</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="parallel">
-                        <h4 id="ph4" class="collapsible" onclick="OpenSection('parallel','ph4')">Párhuzamosítási ismeretek</h4>
-                        <div id="parallel1" class="about-me unshow">
-                            <p>
-                                Párhuzamosítási ismereteim
-                            </p>
-                        </div>
-                    </div>
-                    <div class="test">
-                        <h4 id="th4" class="collapsible" onclick="OpenSection('test','th4')">Tesztelési ismeretek</h4>
-                        <div id="test1" class="about-me unshow">
-                            <p>
-                                Tesztelési ismereteim
-                            </p>
-                        </div>
-                    </div>
-                    <div class="algorythm">
-                        <h4 id="ah4" class="collapsible" onclick="OpenSection('algorythm','ah4')">Algoritmusok</h4>
-                        <div id="algorythm1" class="about-me unshow">
-                            <p>
-                                Algoritmizálási ismereteim
-                            </p>
-                        </div>
-                    </div>
-                    <div class="menu-items">
-                        <div id="database" class="about-me unshow">
-                            <p>
-                                Egy féléves tárgy keretein belül felépítettem egy adatbázist, az Oracle rendszerében.
-                            </p>
-                            <p>
-                                Ez idő alatt a legtöbb, leggyakrabban használt SQL parancsot megismertem.
-                                A féléves projektben szerepelt még eljárások, függvények és nézetek készítése is.
-                            </p>
-                            <h5>Entity framework</h5>
-                            <ul>
-                                <li>Code first</li>
-                                <li>Database first</li>
-                            </ul>
-                        </div>
-
-                        <div id="parallel" class="about-me unshow">
-                            <p>
-                                Párhuzamosítási ismereteim
-                            </p>
-                        </div>
-
-
-                        <div id="test" class="about-me unshow">
-                            <p>
-                                Tesztelési ismereteim
-                            </p>
-                        </div>
-
-                        <div id="algorythm" class="about-me unshow">
-                            <p>
-                                Algoritmizálási ismereteim
-                            </p>
-                        </div>
+            <div id="menuid" class="menu">
+                <div class="database">
+                    <h4 id="h4" class="collapsible" onclick="OpenSection('database','h4')">Adatbázis ismeretek</h4>
+                    <div id="database1" class="about-me unshow">
+                        <p>
+                            Egy féléves tárgy keretein belül felépítettem egy adatbázist, az Oracle rendszerében.
+                        </p>
+                        <p>
+                            Ez idő alatt a legtöbb, leggyakrabban használt SQL parancsot megismertem.
+                            A féléves projektben szerepelt még eljárások, függvények és nézetek készítése is.
+                        </p>
+                        <h5>Entity framework</h5>
+                        <ul>
+                            <li>Code first</li>
+                            <li>Database first</li>
+                        </ul>
                     </div>
                 </div>
+                <div class="parallel">
+                    <h4 id="ph4" class="collapsible" onclick="OpenSection('parallel','ph4')">Párhuzamosítási ismeretek</h4>
+                    <div id="parallel1" class="about-me unshow">
+                        <p>
+                            A legismertebb problémákon(Étkező filozófusok, Alvó borbély) keresztül megismertem a párhuzamos fejlesztés buktatóit, kihívásait
+                            és ezeknek a kezelését.
+                        </p>
+                        <p>
+                            A feladatokon keresztül megismertem a szemaforok működését, atomi műveleteket, a lock fogalmát, a szálbiztos adatszerkezeteket
+                            és ezeknek .Net keretrendszerbeli megvalósítását a Collections.Concurrent névteret.
+                        </p>
+                        <p>
+                            A projektjeim között megtalálható lesz egy konzol alkalmazás ami egy Star Warsos feladatot valósít meg több szálon.
+                        </p>
+                        <h5>Tervezési minták</h5>
+                        <ul>
+                            <li>Master worker</li>
+                            <li>SPMD</li>
+                            <li>Fork-join</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="test">
+                    <h4 id="th4" class="collapsible" onclick="OpenSection('test','th4')">Tesztelési ismeretek</h4>
+                    <div id="test1" class="about-me unshow">
+                        <p>
+                            .Net projektjeim teszteléséhez NUnit keretrendszert használtam a Moq keretrendszerrel kiegészítve.
+                        </p>
+                        <h5>Teszt keretrendszerek</h5>
+                        <ul>
+                            <li>
+                                JUnit
+                            </li>
+                            <li>
+                                NUnit
+                            </li>
+                            <li>Moq</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="algorythm">
+                    <h4 id="ah4" class="collapsible" onclick="OpenSection('algorythm','ah4')">Algoritmus ismeretek</h4>
+                    <div id="algorythm1" class="about-me unshow">
+                        <p>Eddigi feladataim között szerepelt pár összetettebb algoritmus implementálása. </p>
+                        <p>
+                            A visszalépéses keresés algoritmusát
+                            többször is megvalósítottam, egyszer megvalósítható menetrendeket keresett egy bajnokság kialakításához. Egy másik alkalommal
+                            a trónok harca házainak szolgáltatott a királyi raktárból nyersanyagokat. A raktárnak volt egy fix tartalma, a házaknak nyersanyag igénye
+                            és az algoritmus feladata az volt, hogy egy olyan kiosztást találjon ami a házak igényeinek megfelel és a királyi raktárban megtalálható olyan mennyiségű és típusú nyersanyag.
+                        </p>
+                        <p>
+                            Egy kicsit érdekesebb a heurisztikák és klaszterezési eljárások területe. A <a href="https://en.wikipedia.org/wiki/Traveling_tournament_problem" target="_blank">Traveling tournament problémá</a>-ra nyújtottam egy közelítő megoldást egy genetikus algoritmussal és
+                            egy szimulált lehűtés módszerrel is. A klaszterezési eljárások közül a K-means és a DBscan módszerrel ismerkedtem meg részletesebben.
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-items">
+                    <div id="database" class="about-me unshow">
+                        <p>
+                            Egy féléves tárgy keretein belül felépítettem egy adatbázist, az Oracle rendszerében.
+                        </p>
+                        <p>
+                            Ez idő alatt a legtöbb, leggyakrabban használt SQL parancsot megismertem.
+                            A féléves projektben szerepelt még eljárások, függvények és nézetek készítése is.
+                        </p>
+                        <h5>Entity framework</h5>
+                        <ul>
+                            <li>Code first</li>
+                            <li>Database first</li>
+                        </ul>
+                    </div>
+
+                    <div id="parallel" class="about-me unshow">
+                        <p>
+                            A legismertebb problémákon(Étkező filozófusok, Alvó borbély) keresztül megismertem a párhuzamos fejlesztés buktatóit, kihívásait
+                            és ezeknek a kezelését. 
+                        </p>
+                        <p>
+                            A feladatokon keresztül megismertem a szemaforok működését, atomi műveleteket, a lock fogalmát, a szálbiztos adatszerkezeteket
+                            és ezeknek .Net keretrendszerbeli megvalósítását a Collections.Concurrent névteret.
+                        </p>
+                        <p>
+                            A projektjeim között megtalálható lesz egy konzol alkalmazás ami egy Star Warsos feladatot valósít meg több szálon.
+                        </p>
+                        <h5>Tervezési minták</h5>
+                        <ul>
+                            <li>Master worker</li>
+                            <li>SPMD</li>
+                            <li>Fork-join</li>
+                        </ul>
+                    </div>
+
+
+                    <div id="test" class="about-me unshow">
+                        <p>
+                            .Net projektjeim teszteléséhez NUnit keretrendszert használtam a Moq keretrendszerrel kiegészítve.
+                        </p>
+                        <h5>Teszt keretrendszerek</h5>
+                        <ul>
+                            <li>
+                                JUnit
+                            </li>
+                            <li>
+                                NUnit
+                            </li>
+                            <li>Moq</li>
+                        </ul>
+                    </div>
+
+                    <div id="algorythm" class="about-me unshow">
+                        <p>Eddigi feladataim között szerepelt pár összetettebb algoritmus implementálása. </p>
+                        <p>
+                            A visszalépéses keresés algoritmusát
+                            többször is megvalósítottam, egyszer megvalósítható menetrendeket keresett egy bajnokság kialakításához. Egy másik alkalommal
+                            a trónok harca házainak szolgáltatott a királyi raktárból nyersanyagokat. A raktárnak volt egy fix tartalma, a házaknak nyersanyag igénye
+                            és az algoritmus feladata az volt, hogy egy olyan kiosztást találjon ami a házak igényeinek megfelel és a királyi raktárban megtalálható olyan mennyiségű és típusú nyersanyag.
+                        </p>
+                        <p>
+                            Egy kicsit érdekesebb a heurisztikák és klaszterezési eljárások területe. A <a href="https://en.wikipedia.org/wiki/Traveling_tournament_problem" target="_blank">Traveling tournament problémá</a>-ra nyújtottam egy közelítő megoldást egy genetikus algoritmussal és
+                            egy szimulált lehűtés módszerrel is. A klaszterezési eljárások közül a K-means és a DBscan módszerrel ismerkedtem meg részletesebben.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="keywords-wrapper">
+                <h3>Kulcsszavak</h3>
+                <ul>
+                    <li>Motiváltság az új technológiák megismerésére</li>
+                    <li>Felelősségtudat</li>
+                    <li>Csapatmunkában is alkalmazkodó készség</li>
+                    <li>Megbízhatóság</li>
+                    <li>Önállóság</li>
+                </ul>
+            </div>
         </div>
     </section>
 

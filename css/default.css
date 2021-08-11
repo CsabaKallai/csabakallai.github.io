@@ -66,7 +66,7 @@ html, body {
 
 #profile {
     height: 16em;
-    border: 2px solid #c1c1c1;
+    border :1px solid #17a2b8;
     display: block;
     margin: 0 auto;
     border-radius: 15px 15px 15px 15px;
@@ -112,6 +112,11 @@ html, body {
     grid-template-areas: 
         'about-me skills'
 }
+#menuid div {
+    height: auto;
+    width: 100%;
+    margin: auto 0px;
+}
 
 .menu {
     display: grid;
@@ -122,16 +127,30 @@ html, body {
         'database parallel test algorythm'
         'menu-items menu-items menu-items menu-items';
 }
-
-.menu div{
-    width:100%;
+ul {
+    list-style: none;
+    line-height: 2em;
 }
+
 .menu-items{
     grid-area:menu-items;
 }
 
-#database, #parallel, #test, #algorythm{
-    margin:0;
+.keywords-wrapper {
+    margin:30px 0px;
+    border: 1.5px solid#17a2b8;
+    padding: 15px;
+    background-color: rgba(251,249, 243, 0.8);
+    border-radius: 10px 10px 10px 10px;
+}
+
+    .keywords-wrapper ul {
+        line-height: 2.5em;
+        letter-spacing: 1px;
+    }
+
+#database, #parallel, #test, #algorythm {
+    margin: 0;
 }
 .database {
     grid-area: database;
