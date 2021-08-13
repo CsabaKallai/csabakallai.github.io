@@ -179,6 +179,10 @@ ul {
     display: inline-block;
 }
 
+.post-text p{
+    height: 7em;
+}
+
 .active.collapsible:after {
     content: "\2212";
 }
@@ -253,7 +257,7 @@ ul {
 }
 
 .post {
-    border: 1px solid #c1c1c1;
+    border: 1px solid#17a2b8;
 }
 
 .thumbnail {
@@ -263,7 +267,7 @@ ul {
 }
 
 .post-text {
-    background-color: #fff;
+    background-color: rgba(251,249, 243, 0.8);
     padding: 15px;
 }
 
@@ -409,5 +413,9 @@ ul {
 
     .social-content p {
         font-size: 0.9em;
+    }
+
+    .post-text p{
+        height: 10em;
     }
 }

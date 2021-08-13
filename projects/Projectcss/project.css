@@ -9,18 +9,17 @@ html, body {
     box-sizing: border-box
 }
     .section1 h3,h4 {
-        border-bottom: 1px solid #1a7cd2;
         display: inline;
         padding-bottom: 5px;
     }
 
     .section1 p{
         text-align:justify;
-        min-width:140%;
+        /*min-width:140%; */
         padding:5px;
     }
 .main-container {
-    width: 70%;
+    width: 77%;
     margin: 10px auto;
 }
 
@@ -63,6 +62,7 @@ html, body {
 .close-wrapper img{
     width:25px;
     height:40px;
+    cursor:pointer;
 }
 
 #lw1 {
@@ -95,21 +95,27 @@ html, body {
     .nav-wrapper img {
         width: 30px;
         height: 50px;
+        cursor:pointer;
     }
 .mySlides {
     display: none
 }
 
 #skills {
-    margin: 16px 5px;
+    width: 128%;
+    margin: 16px 0px;
+    border: 1.5px solid#17a2b8;
+    padding: 15px;
+    background-color: rgba(251,249, 243, 0.8);
+    border-radius: 10px 10px 10px 10px;
 }
 
-    #skills h4 {
+    /* #skills h4 {
         text-align: center;
-    }
+    } */
 
     #skills img {
-        max-width: 18%;
+        width: 5em;
         height: auto;
         margin: 10px;
     }
@@ -128,9 +134,9 @@ html, body {
             text-align: center;
         }
 
-img {
+/* img {
     vertical-align: middle;
-}
+} */
 
 /* Slideshow container */
 .slideshow-container {
