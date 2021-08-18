@@ -114,17 +114,12 @@ html, body {
     grid-template-areas: 
         'about-me skills'
 }
-#menuid div {
-    height: auto;
-    width: 100%;
-    margin: auto 0px;
-}
 
 .menu {
     display: grid;
     grid-area:menu;
     grid-template-columns: auto;
-    grid-gap:10px;
+    grid-gap: 3%;
     grid-template-areas: 
         'database parallel test algorythm'
         'menu-items menu-items menu-items menu-items';
@@ -168,7 +163,6 @@ ul {
 
 .algorythm {
     grid-area: algorythm;
-    width:max-content;
 }
 
 .collapsible {

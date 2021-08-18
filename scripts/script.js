@@ -3,32 +3,31 @@ var previoussection;
 var previoussectionid;
 var menu = document.getElementById('menuid');
 function OpenSection(id, h4) {
-	
-	var menuwidth = menu.clientWidth; 
-  var x;
-	var y = document.getElementById(h4);
-	if ( menuwidth < 650) {
-		x = document.getElementById( (id+='1') );
+
+	var menuwidth = menu.clientWidth;
+	var actualSection = document.getElementById(id);
+	var actualSectionAfterIcon = document.getElementById(h4);
+	if (menuwidth < 650) {
+		const selector = "."+ id;
+		document.querySelector(selector).appendChild(actualSection);
 	}
-	else {
-		x = document.getElementById(id);
-	}
-	if (previoussection != null && x != previoussection) {
+
+	if (actualSection != previoussection && previoussection != null ) {
 		previoussectionid.classList.remove("active");
 		previoussection.classList.add("unshow");
-        previoussection.classList.remove("show");
+		previoussection.classList.remove("show");
 	}
-    if (x.classList.contains("unshow")) {
-        x.classList.add("show");
-        x.classList.remove("unshow");
-        y.classList.add("active");
-    }
-    else {
-		x.classList.add("unshow");
-        x.classList.remove("show");
-		y.classList.remove("active");
+	if (actualSection.classList.contains("unshow")) {
+		actualSection.classList.add("show");
+		actualSection.classList.remove("unshow");
+		actualSectionAfterIcon.classList.add("active");
 	}
-	previoussection = x;
-	previoussectionid = y;
+	else {
+		actualSection.classList.add("unshow");
+		actualSection.classList.remove("show");
+		actualSectionAfterIcon.classList.remove("active");
+	}
+	previoussection = actualSection;
+	previoussectionid = actualSectionAfterIcon;
 
 }
