@@ -283,10 +283,12 @@
         </div>
     </section>
     <section class="section2">
-        <div class="main-container">
-            <h2 style="text-align:center; margin-bottom:45px;">Küldj üzit!</h2>
+        <div id="email" class="main-container">
+            <h2 style="text-align:center; margin-bottom:45px;">Vegye fel velem a kapcsolatot!</h2>
             <div class="grid">
                 <form action="https://formsubmit.co/kallai.csabi1996@gmail.com" method="POST">
+                    <input type="hidden" name="_next" value="https://csabakallai.github.io/projects/Email/index.html">
+                    <input type="hidden" name="_captcha" value="false">
                     <div class="contact-content">
                         <input type="text" name="name" placeholder="Név" required>
                     </div>
@@ -294,9 +296,10 @@
                         <input type="email" name="email" placeholder="Email" required>
                     </div>
                     <div class="contact-content">
-                        <textarea placeholder="Üzenet" name="Message" rows="10">
-                            
-                        </textarea>
+                        <input type="text" name="_subject" placeholder="Tárgy" required>
+                    </div>
+                    <div class="contact-content">
+                        <textarea placeholder="Üzenet" name="Message" rows="10"></textarea>
                     </div>
                     <div class="contact-content">
                         <button type="submit">Küldés</button>

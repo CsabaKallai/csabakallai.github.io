@@ -246,7 +246,7 @@ ul {
 
 .post-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit,320px);
+    grid-template-columns: repeat(auto-fit,330px);
     gap: 20px;
     justify-content: center;
     padding-bottom: 50px;
@@ -283,6 +283,7 @@ ul {
 .post-intro {
     color: #4b5156;
     font-size: 16px;
+    margin-bottom: 3rem;
 }
 
 .show {
@@ -336,9 +337,20 @@ ul {
     #infos {
         width: 390px;
     }
+
+    .post-wrapper {
+        grid-template-columns: repeat(auto-fit,300px);
+    }
 }
 
-@media screen and (max-width:1270px) {
+@media screen and (max-width:1380px) {
+
+    .post-wrapper {
+        grid-template-columns: repeat(auto-fit,280px);
+    }
+}
+
+@media screen and (max-width:1277px) {
     .about-wrapper {
         display: block;
     }
@@ -370,6 +382,10 @@ ul {
     #skills img{
         width:4em;
     }
+
+    .post-wrapper {
+        grid-template-columns: repeat(auto-fit,260px);
+    }
 }
 
 @media screen and (max-width:980px) {
@@ -384,6 +400,10 @@ ul {
     #profile {
         margin: 0 auto;
     }
+
+    .greeting-wrapper h1{
+        font-size: 1.7em;
+    }
 }
 
 @media screen and (max-width:940px) {
@@ -391,6 +411,13 @@ ul {
         display: block;
     }
 }
+
+@media screen and (max-width:700px) {
+    .greeting-wrapper h1{
+        font-size: 1.5em;
+    }
+}
+
 @media screen and (max-width:600px) {
     #infos {
         width: 250px;
@@ -398,6 +425,13 @@ ul {
 
     #skills img {
         max-width: 30%;
+    }
+    .contact-content input, textarea{
+        width: 20rem;
+    }
+
+    .greeting-wrapper h1{
+        font-size: 1.1em;
     }
 }
 
@@ -412,6 +446,9 @@ ul {
 
     #infos {
         width: 180px;
+    }
+    .contact-content input, textarea{
+        width: 20rem;
     }
 }
 
@@ -438,5 +475,9 @@ ul {
 
     .post-text p{
         height: 10em;
+    }
+
+    .contact-content input, textarea{
+        width: 12rem;
     }
 }
