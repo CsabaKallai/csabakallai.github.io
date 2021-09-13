@@ -228,60 +228,65 @@
     <section class="section1">
         <div class="main-container">
             <h2 id="projects" style="text-align:center">Projektjeim</h3>
-
-                <div class="post-wrapper">
-                    <div>
-                        <div class="post">
-                            <a href="projects/ProjectLOK/index.html">
-                                <img class="thumbnail" src="projects/ProjectLOK/images/title.jpg" alt="projekt kép" />
-                            </a>
-                            <div class="post-text">
-                                <h5 class="post-title">Ligák optimális kialakítása</h5>
-                                <p class="post-intro">
-                                    ASP.net (MVC) projekt. Heurisztikákat alkalmazva próbál optimális menetrendeket
-                                    kialakítani.
-                                </p>
-                                <a href="projects/ProjectLOK/index.html">Érdekel</a>
+                <div class="slide hi-slide">
+                    <div class="hi-prev "></div>
+                    <div class="hi-next "></div>
+                    <ul>
+                        <li>
+                            <div class="post">
+                                <a href="projects/ProjectLOK/index.html">
+                                    <img class="thumbnail" src="projects/ProjectLOK/images/title.jpg"
+                                        alt="projekt kép" />
+                                </a>
+                                <div class="post-text">
+                                    <h5 class="post-title">Ligák optimális kialakítása</h5>
+                                    <p class="post-intro">
+                                        ASP.net (MVC) projekt. Heurisztikákat alkalmazva próbál optimális menetrendeket
+                                        kialakítani.
+                                    </p>
+                                    <a href="projects/ProjectLOK/index.html">Érdekel</a>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="post">
-                            <a href="projects/ProjectProg3/index.html">
-                                <img class="thumbnail" src="projects/ProjectProg3/images/title.JPG"
-                                    alt="feltöltés alatt" />
-                            </a>
-                            <div class="post-text">
-                                <h5 class="post-title">Rétegzett architektúra</h5>
-                                <p class="post-intro">
-                                    .NET konzolos alkalmazás. Megfelelően rétegzett architektúrával működő konzolos
-                                    program, adatbázissal a háttérben.
-                                </p>
-                                <a href="projects/ProjectProg3/index.html">Érdekel</a>
+                        </li>
+                        <li>
+                            <div class="post">
+                                <a href="projects/ProjectProg3/index.html">
+                                    <img class="thumbnail" src="projects/ProjectProg3/images/title.JPG"
+                                        alt="feltöltés alatt" />
+                                </a>
+                                <div class="post-text">
+                                    <h5 class="post-title">Rétegzett architektúra</h5>
+                                    <p class="post-intro">
+                                        .NET konzolos alkalmazás. Megfelelően rétegzett architektúrával működő konzolos
+                                        program, adatbázissal a háttérben.
+                                    </p>
+                                    <a href="projects/ProjectProg3/index.html">Érdekel</a>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="post">
-                            <a href="projects/ProjectCarDealerShip/index.html">
-                                <img class="thumbnail" src="projects/ProjectCarDealerShip/images/title.JPG"
-                                    alt="feltöltés alatt" />
-                            </a>
-                            <div class="post-text">
-                                <h5 class="post-title">Autó kereskedő weboldal</h5>
-                                <p class="post-intro">
-                                    Angular projekt egy fake json server adatbázissal a backend oldalon.
-                                </p>
-                                <a href="projects/ProjectCarDealerShip/index.html">Érdekel</a>
+                        </li>
+                        <li>
+                            <div class="post">
+                                <a href="projects/ProjectCarDealerShip/index.html">
+                                    <img class="thumbnail" src="projects/ProjectCarDealerShip/images/title.JPG"
+                                        alt="feltöltés alatt" />
+                                </a>
+                                <div class="post-text">
+                                    <h5 class="post-title">Autó kereskedő weboldal</h5>
+                                    <p class="post-intro">
+                                        Angular projekt egy fake json server adatbázissal a backend oldalon.
+                                    </p>
+                                    <div>
+                                        <a href="projects/ProjectCarDealerShip/index.html">Érdekel</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
-
+                <br>
         </div>
     </section>
+
     <section class="section2">
         <div id="email" class="main-container">
             <h2 style="text-align:center; margin-bottom:45px;">Vegye fel velem a kapcsolatot!</h2>
@@ -312,7 +317,7 @@
     <!--kapcsolatfelvétel-->
     <section class="section1">
         <div class="main-container">
-            <h2 id="contact" style="text-align:center; margin-bottom:45px;">Kapcsolatfelvétel</h2>
+            <!-- <h2 id="contact" style="text-align:center; margin-bottom:45px;">Kapcsolatfelvétel</h2> -->
             <div class="social">
 
                 <div class="social-content">
@@ -355,7 +360,11 @@
             </div>
         </div>
     </section>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="scripts/script.js"></script>
+    <script>
+        $('.slide').hiSlide();
+    </script>
 </body>
 
 </html>
