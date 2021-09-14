@@ -38,15 +38,13 @@ function OpenSection(id, h4) {
     var slide = function(ele,options) {
         var $ele = $(ele);
         var setting = {
-            speed: 500,
-            interval: 2000,
-            
+            speed: 450,
         };
         $.extend(true, setting, options);
         var states = [
-            { $zIndex: 1, width: '25%', height: 250, top: 100, left: '0%', $opacity: 0.3 },
-            { $zIndex: 2, width: '44%', height: 525, top: 50, left: '28%', $opacity: 1 },
-            { $zIndex: 1, width: '25%', height: 250, top: 100, left: '75%', $opacity: 0.3 }
+            { $zIndex: 1, width: '25%', height: 250, top: 180, left: '0%', $opacity: 0.3},
+            { $zIndex: 2, width: '44%', height: 525, top: 30, left: '28%', $opacity: 1},
+            { $zIndex: 1, width: '25%', height: 250, top: 180, left: '75%', $opacity: 0.3}
         ];
 
         var $lis = $ele.find('li');

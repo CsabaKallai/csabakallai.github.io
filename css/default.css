@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
+*{
+    box-sizing: border-box;
+    font-weight: 100!important;
+}
 /*css reset*/
 html, body {
     padding: 0;
     margin: 0;
-    font-family: 'Roboto Mono','sans-serif';
+    font-family: 'Montserrat', sans-serif;
 }
-*{
-    box-sizing: border-box;
+
+h1,h2, h3{
+    font-weight: 700!important;
 }
 
 .section1 {
@@ -59,7 +65,7 @@ html, body {
 }
 
     .greeting-wrapper h1 {
-        font-size: 2em;
+        font-size: 2.3em;
         text-align: center;
     }
 
@@ -85,7 +91,8 @@ html, body {
 }
 
 #infos {
-    width: 450px;
+    width: 90%;
+    margin: 20px auto;
     border: 1.5px solid#17a2b8;
     background-color: rgba(251,249, 243, 0.8);
     padding: 15px;
@@ -268,10 +275,9 @@ ul {
 }
 
     .post-text a {
-        list-style: none;
         text-decoration: none;
         color: #1a7cd2;
-        margin: 37.5%;
+        /* margin: 37.5%; */
     }
 
 
@@ -323,7 +329,7 @@ ul {
 }
 
     .social-content img {
-        margin-right: 30px;
+        margin-right: 45px;
     }
 
     .social-content a {
@@ -411,13 +417,6 @@ ul {
       }
 
 
-@media screen and (max-width:1500px) {
-    #infos {
-        width: 390px;
-    }
-}
-
-
 @media screen and (max-width:1277px) {
     .about-wrapper {
         display: block;
@@ -440,10 +439,6 @@ ul {
         margin: 0 10px;
     }
 
-    #infos {
-        width: 350px;
-    }
-
     #skills {
         margin-top: 30px;
     }
@@ -455,10 +450,6 @@ ul {
 @media screen and (max-width:980px) {
     .intro-wrapper {
         display: block;
-    }
-
-    #infos {
-        margin-bottom: 25px;
     }
 
     #profile {
@@ -483,9 +474,6 @@ ul {
 }
 
 @media screen and (max-width:600px) {
-    #infos {
-        width: 250px;
-    }
 
     #skills img {
         max-width: 30%;
@@ -507,10 +495,6 @@ ul {
         #skills img {
             max-width: 45%;
         }
-
-    #infos {
-        width: 180px;
-    }
     .contact-content input, textarea{
         width: 20rem;
     }
@@ -521,9 +505,6 @@ ul {
 }
 
 @media screen and (max-width:360px) {
-    #infos {
-        padding: 3px;
-    }
 
     .post-wrapper {
         grid-template-columns: repeat(auto-fit,250px);
@@ -553,7 +534,11 @@ ul {
         width: -webkit-fill-available;
     }
 
-    .about-me{
+    .about-me, #infos{
         padding:7px;
+    }
+
+    #infos p, .about-me p{
+        font-size: 14px;
     }
 }
