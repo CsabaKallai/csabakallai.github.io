@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
 *{
     box-sizing: border-box;
-    font-weight: 100!important;
+    font-weight: 200!important;
 }
 /*css reset*/
 html, body {
@@ -186,9 +186,9 @@ ul {
     display: inline-block;
 }
 
-.post-text p{
+/* .post-text p{
     height: 7em;
-}
+} */
 
 .active.collapsible:after {
     content: "\2212";
@@ -260,6 +260,7 @@ ul {
     border: 1px solid#17a2b8;
     box-shadow: 0px 0px 7px grey;
     display: grid;
+    grid-template-rows: 0.5fr 1.7fr;
     text-align: center;
 }
 
@@ -277,9 +278,14 @@ ul {
     .post-text a {
         text-decoration: none;
         color: #1a7cd2;
-        /* margin: 37.5%; */
+        position: absolute;
+        right: 0;
+        left: 0;    
     }
 
+    .active{
+        height: 500px!important;
+    }
 
 .post-title {
     margin: 0;
@@ -287,8 +293,11 @@ ul {
 
 .post-intro {
     color: #4b5156;
-    font-size: 16px;
-    margin-bottom: 3rem;
+    position: relative;
+}
+
+.link-wrapper{
+    margin-top:7%;
 }
 
 .show {
@@ -417,7 +426,7 @@ ul {
       }
 
 
-@media screen and (max-width:1277px) {
+@media screen and (max-width:1280px) {
     .about-wrapper {
         display: block;
     }
@@ -445,6 +454,18 @@ ul {
     #skills img{
         width:4em;
     }
+
+    .post-text a{
+        margin: 0;
+    }
+
+    .active{
+        height: 600px!important;
+    }
+
+    .link-wrapper{
+        margin-top: 15%;
+    }
 }
 
 @media screen and (max-width:980px) {
@@ -467,13 +488,29 @@ ul {
     }
 }
 
+@media screen and (max-width:800px) {
+    .active{
+        height: 700px!important;
+    }
+    
+    .link-wrapper{
+        margin-top: 20%;
+    }
+
+    .hi-slide{
+        height: 750px;
+
+    }
+}
+
+
 @media screen and (max-width:700px) {
     .greeting-wrapper h1{
         font-size: 1.5em;
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:623px) {
 
     #skills img {
         max-width: 30%;
@@ -484,6 +521,22 @@ ul {
 
     .greeting-wrapper h1{
         font-size: 1.1em;
+    }
+
+    .active{
+        height: 750px!important;
+    }
+    
+    .link-wrapper{
+        margin-top: 23%;
+    }
+
+    .hi-slide{
+        height: 850px;
+    }
+
+    .post-text {
+        padding:2px;
     }
 }
 
@@ -522,9 +575,9 @@ ul {
         font-size: 0.9em;
     }
 
-    .post-text p{
+    /* .post-text p{
         height: 10em;
-    }
+    } */
 
     .contact-content input, textarea{
         width: 12rem;

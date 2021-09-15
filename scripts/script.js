@@ -42,9 +42,9 @@ function OpenSection(id, h4) {
         };
         $.extend(true, setting, options);
         var states = [
-            { $zIndex: 1, width: '25%', height: 250, top: 180, left: '0%', $opacity: 0.3},
-            { $zIndex: 2, width: '44%', height: 525, top: 30, left: '28%', $opacity: 1},
-            { $zIndex: 1, width: '25%', height: 250, top: 180, left: '75%', $opacity: 0.3}
+            { $zIndex: 1, width: '25%', height: 250, top: 180, left: '0%', $opacity: 0.3, active:'sub-active'},
+            { $zIndex: 2, width: '44%', top: 30, left: '28%', $opacity: 1, active:"active"},
+            { $zIndex: 1, width: '25%', height: 250, top: 180, left: '75%', $opacity: 0.3, active:'sub-active'}
         ];
 
         var $lis = $ele.find('li');
@@ -64,6 +64,11 @@ function OpenSection(id, h4) {
                 $(element).css('zIndex', state.$zIndex).finish().animate(state, setting.speed)
                 .find('img').css('opacity', state.$opacity)
                 .css('left', state.left);
+                if (state.active =='active') {
+                    $(element).addClass("active")
+                }else {
+                     $(element).removeClass("active");
+                }
             });
         }
         function next() {
