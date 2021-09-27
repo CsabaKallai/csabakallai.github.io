@@ -65,9 +65,9 @@ function OpenSection(id, h4) {
                 .find('img').css('opacity', state.$opacity)
                 .css('left', state.left);
                 if (state.active =='active') {
-                    $(element).addClass("active")
+                    $(element).addClass("act")
                 }else {
-                     $(element).removeClass("active");
+                     $(element).removeClass("act");
                 }
             });
         }

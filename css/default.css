@@ -283,7 +283,7 @@ ul {
         left: 0;    
     }
 
-    .active{
+    .act{
         height: 500px!important;
     }
 
@@ -459,7 +459,7 @@ ul {
         margin: 0;
     }
 
-    .active{
+    .act {
         height: 600px!important;
     }
 
@@ -489,7 +489,7 @@ ul {
 }
 
 @media screen and (max-width:800px) {
-    .active{
+    .act{
         height: 700px!important;
     }
     
@@ -523,7 +523,7 @@ ul {
         font-size: 1.1em;
     }
 
-    .active{
+    .act{
         height: 750px!important;
     }
     

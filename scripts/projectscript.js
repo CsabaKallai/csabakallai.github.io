@@ -25,8 +25,9 @@ var slideIndex = 1;
         dots[slideIndex - 1].className += " active";
     }
 
-    var ytsection = document.getElementById('ytsection');
+
 function openyt() {
+    let ytsection = document.getElementById('ytsection');
     if (ytsection.className == "unshow") {
         ytsection.className = "show";
     }
