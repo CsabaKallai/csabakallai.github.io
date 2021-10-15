@@ -44,7 +44,9 @@
 .show{
     display:block;
 }
-
+.myslides{
+    text-align: center;
+}
 .unshow, .mySlides{
     display:none;
 }
@@ -152,6 +154,25 @@
     background-position: -110px -110px !important;
 }
 
+#lok_sprite_5, #lok_sprite_6, #lok_sprite_7,#lok_sprite_8{
+    background : url('../ProjectLOK/images/lok_project_sprite.png') !important;
+    width: 600px;
+    height: 600px;
+    display: inline-block;
+}
+#lok_sprite_5{
+    background-position: -630px -630px !important;
+}
+#lok_sprite_6{
+    background-position: -10px -630px !important;
+}
+#lok_sprite_7{
+    background-position:  -630px -10px !important;
+}
+#lok_sprite_8{
+    background-position: -10px -10px !important;
+}
+
 #prog3_sprite_1, #prog3_sprite_2, #prog3_sprite_3, #prog3_sprite_4, #prog3_sprite_5{
     background : url('../ProjectProg3/images/prog3_sprite.png') !important;
     width: 80px;
@@ -192,8 +213,10 @@
 .slideshow-container {
     max-width: 1000px;
     position: relative;
-    margin: 50px auto;
-    border: 1.5px solid;
+    border: 1.5px solid#17a2b8;
+    padding: 15px;
+    background-color: rgba(251,249,243,.8);
+    border-radius: 10px 10px 10px 10px
 }
 
 .slideshow-container img{
