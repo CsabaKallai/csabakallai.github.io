@@ -45,7 +45,7 @@
     display:block;
 }
 
-.unshow{
+.unshow, .mySlides{
     display:none;
 }
 
@@ -102,9 +102,6 @@
         height: 50px;
         cursor:pointer;
     }
-.mySlides {
-    display: none
-}
 
 #skills {
     width: 128%;
@@ -115,7 +112,7 @@
     border-radius: 10px 10px 10px 10px;
 }
 
-    #skills img {
+    #skills img,span {
         width: 5em;
         height: auto;
         margin: 10px;
@@ -131,11 +128,67 @@
         padding: 0;
     }
 
-        .skills-content ul li {
+        .skills-content ul li,span {
             text-align: center;
         }
 
-/* Slideshow container */
+#lok_sprite_1, #lok_sprite_2, #lok_sprite_3,#lok_sprite_4{
+    background : url('../ProjectLOK/images/lok_sprite.png') !important;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+}
+
+#lok_sprite_1{
+    background-position: -110px -10px !important;
+}
+#lok_sprite_2{
+    background-position: -10px -110px !important;
+}
+#lok_sprite_3{
+    background-position:  -10px -10px !important;
+}
+#lok_sprite_4{
+    background-position: -110px -110px !important;
+}
+
+#prog3_sprite_1, #prog3_sprite_2, #prog3_sprite_3, #prog3_sprite_4, #prog3_sprite_5{
+    background : url('../ProjectProg3/images/prog3_sprite.png') !important;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+}
+#prog3_sprite_1{
+    background-position: -110px -110px !important;
+}
+#prog3_sprite_2{
+    background-position: -210px -10px !important;
+}
+#prog3_sprite_3{
+    background-position:  -110px -10px !important;
+}
+#prog3_sprite_4{
+    background-position: -10px -110px !important;
+}
+#prog3_sprite_5{
+    background-position: -10px -10px !important;
+}
+
+#car_sprite_1, #car_sprite_2, #car_sprite_3{
+    background : url('../ProjectCarDealerShip/images/car_sprite.png') !important;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+}
+#car_sprite_1{
+    background-position: -10px -110px !important;
+}
+#car_sprite_2{
+    background-position: -110px -10px !important;
+}
+#car_sprite_3{
+    background-position:  -10px -10px !important;
+}
 .slideshow-container {
     max-width: 1000px;
     position: relative;
@@ -148,7 +201,6 @@
     max-height:750px;
 }
 
-/* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -164,18 +216,16 @@
     user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-    /* On hover, add a black background color with a little bit see-through */
     .prev:hover, .next:hover {
         background-color: rgba(0,0,0,0.8);
     }
 
-/* Caption text */
+
 .text {
     color: #f2f2f2;
     font-size: 15px;
@@ -188,7 +238,6 @@
 
 
 
-/* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
     height: 15px;
@@ -204,7 +253,6 @@
         background-color: #717171;
     }
 
-/* Fading animation */
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -232,7 +280,7 @@
     }
 }
 
-/* On smaller screens, decrease text size */
+
 @media only screen and (max-width: 300px) {
     .prev, .next, .text {
         font-size: 11px

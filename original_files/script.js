@@ -1,18 +1,13 @@
 
 var previoussection;
 var previoussectionid;
-var menu = document.getElementById('menuid');
+const menu = document.getElementById('menuid');
 function OpenSection(id, h4) {
-
-	var menuwidth = menu.clientWidth;
 	var actualSection = document.getElementById(id);
 	var actualSectionAfterIcon = document.getElementById(h4);
-	if (menuwidth < 650) {
-		const selector = "."+ id;
-		document.querySelector(selector).appendChild(actualSection);
-	}
+	
 
-	if (actualSection != previoussection && previoussection != null ) {
+	if (actualSection != previoussection  && previoussection != null ) {
 		previoussectionid.classList.remove("active");
 		previoussection.classList.add("unshow");
 		previoussection.classList.remove("show");
@@ -27,24 +22,29 @@ function OpenSection(id, h4) {
 		actualSection.classList.remove("show");
 		actualSectionAfterIcon.classList.remove("active");
 	}
+
+	const menuwidth = menu.clientWidth;
+    if (menuwidth < 650) {
+		const selector = "."+ id;
+		document.querySelector(selector).appendChild(actualSection);
+	}
 	previoussection = actualSection;
 	previoussectionid = actualSectionAfterIcon;
 
 }
 
-//slides
-
+const proj_menu = document.getElementById('proj_menu');
 (function($) {
     var slide = function(ele,options) {
         var $ele = $(ele);
         var setting = {
-            speed: 450,
+            speed: 432,
         };
         $.extend(true, setting, options);
         var states = [
-            { $zIndex: 1, width: '25%', height: 250, top: 180, left: '0%', $opacity: 0.3, active:'sub-active'},
-            { $zIndex: 2, width: '44%', top: 30, left: '28%', $opacity: 1, active:"active"},
-            { $zIndex: 1, width: '25%', height: 250, top: 180, left: '75%', $opacity: 0.3, active:'sub-active'}
+            { $zIndex: 1, width: '25%', height: 240, top: 180, left: '0%', $opacity: 0.3, active:'sub-active'},
+            { $zIndex: 2, width: '30%', top: 30, left: '36%', $opacity: 1, active:"active"},
+            { $zIndex: 1, width: '25%', height: 240, top: 180, left: '75%', $opacity: 0.3, active:'sub-active'}
         ];
 
         var $lis = $ele.find('li');

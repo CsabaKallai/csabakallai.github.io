@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-
 *{
     box-sizing: border-box;
     font-weight: 200!important;
 }
-/*css reset*/
 html, body {
     padding: 0;
     margin: 0;
@@ -81,6 +79,18 @@ h1,h2, h3{
     margin: 0 auto;
     border-radius: 15px 15px 15px 15px;
     box-shadow: 0px 0px 10px grey;
+    width: 194px; height: 253px;
+    background-position:  -690px -10px !important;
+}
+
+#profile, #wpf_sprite{
+    background: url('../images/project_sprites.png');
+}
+
+#wpf_sprite{
+    display: inline-block;
+    width: 64px; height: 64px;
+    background-position: -690px -283px;
 }
 
 .right-column {
@@ -186,10 +196,6 @@ ul {
     display: inline-block;
 }
 
-/* .post-text p{
-    height: 7em;
-} */
-
 .active.collapsible:after {
     content: "\2212";
 }
@@ -262,12 +268,29 @@ ul {
     display: grid;
     grid-template-rows: 0.5fr 1.7fr;
     text-align: center;
+    max-width: 320px;
 }
 
 .thumbnail {
-    width: 100%;
-    height: 250px;
     display: block;
+}
+#project_sprites_first,
+#project_sprites_second,
+#project_sprites_third
+{
+    background: url('../images/project_sprites.png') !important;
+    background-repeat: no-repeat;
+    height: 240px;
+    width: 320px;
+}
+#project_sprites_first{
+    background-position: -10px -270px !important;
+}
+#project_sprites_second{
+    background-position: -10px -10px !important;
+}
+#project_sprites_third{
+    background-position: -350px -10px  !important
 }
 
 .post-text {
@@ -285,6 +308,7 @@ ul {
 
     .act{
         height: 500px!important;
+        max-width: 320px;
     }
 
 .post-title {
@@ -297,7 +321,7 @@ ul {
 }
 
 .link-wrapper{
-    margin-top:7%;
+    margin-top:65%;
 }
 
 .show {
@@ -462,10 +486,6 @@ ul {
     .act {
         height: 600px!important;
     }
-
-    .link-wrapper{
-        margin-top: 15%;
-    }
 }
 
 @media screen and (max-width:980px) {
@@ -494,7 +514,7 @@ ul {
     }
     
     .link-wrapper{
-        margin-top: 20%;
+        margin-top: 120%;
     }
 
     .hi-slide{
@@ -525,10 +545,6 @@ ul {
 
     .act{
         height: 750px!important;
-    }
-    
-    .link-wrapper{
-        margin-top: 23%;
     }
 
     .hi-slide{

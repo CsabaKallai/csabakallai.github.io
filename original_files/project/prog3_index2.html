@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <title>Ligák optimális kialakítása</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+          maximum-scale=1,minimum-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../Projectcss/project_min.css" />
+</head>
+<body>
+    <section>
+        <div class="main-container">
+            <div class="nav-wrapper">
+                <div id="lw1" class="link-wrapper">
+                    <p>
+                        <a>
+                            <img alt="youtube icon" onclick="openyt()" src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSIwIC03NyA1MTIuMDAyMTMgNTEyIiB3aWR0aD0iNTEycHQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTUwMS40NTMxMjUgNTYuMDkzNzVjLTUuOTAyMzQ0LTIxLjkzMzU5NC0yMy4xOTUzMTMtMzkuMjIyNjU2LTQ1LjEyNS00NS4xMjg5MDYtNDAuMDY2NDA2LTEwLjk2NDg0NC0yMDAuMzMyMDMxLTEwLjk2NDg0NC0yMDAuMzMyMDMxLTEwLjk2NDg0NHMtMTYwLjI2MTcxOSAwLTIwMC4zMjgxMjUgMTAuNTQ2ODc1Yy0yMS41MDc4MTMgNS45MDIzNDQtMzkuMjIyNjU3IDIzLjYxNzE4Ny00NS4xMjUgNDUuNTQ2ODc1LTEwLjU0Mjk2OSA0MC4wNjI1LTEwLjU0Mjk2OSAxMjMuMTQ4NDM4LTEwLjU0Mjk2OSAxMjMuMTQ4NDM4czAgODMuNTAzOTA2IDEwLjU0Mjk2OSAxMjMuMTQ4NDM3YzUuOTA2MjUgMjEuOTI5Njg3IDIzLjE5NTMxMiAzOS4yMjI2NTYgNDUuMTI4OTA2IDQ1LjEyODkwNiA0MC40ODQzNzUgMTAuOTY0ODQ0IDIwMC4zMjgxMjUgMTAuOTY0ODQ0IDIwMC4zMjgxMjUgMTAuOTY0ODQ0czE2MC4yNjE3MTkgMCAyMDAuMzI4MTI1LTEwLjU0Njg3NWMyMS45MzM1OTQtNS45MDIzNDQgMzkuMjIyNjU2LTIzLjE5NTMxMiA0NS4xMjg5MDYtNDUuMTI1IDEwLjU0Mjk2OS00MC4wNjY0MDYgMTAuNTQyOTY5LTEyMy4xNDg0MzggMTAuNTQyOTY5LTEyMy4xNDg0MzhzLjQyMTg3NS04My41MDc4MTItMTAuNTQ2ODc1LTEyMy41NzAzMTJ6bTAgMCIgZmlsbD0iI2YwMCIvPjxwYXRoIGQ9Im0yMDQuOTY4NzUgMjU2IDEzMy4yNjk1MzEtNzYuNzU3ODEyLTEzMy4yNjk1MzEtNzYuNzU3ODEzem0wIDAiIGZpbGw9IiNmZmYiLz48L3N2Zz4=" />
+                        </a>
+                    </p>
+                </div>
+                <div id="lw2" class="link-wrapper">
+                    <p>
+                        <a href="">
+                            <img alt="github icon" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMjU2IDBjLTE0MC42MDkzNzUgMC0yNTYgMTE1LjM5MDYyNS0yNTYgMjU2IDAgMTE5Ljk4ODI4MSA4NC4xOTUzMTIgMjI4Ljk4NDM3NSAxOTYgMjU2di04NC42OTUzMTJjLTExLjA3ODEyNSAyLjQyNTc4MS0yMS4yNzM0MzggMi40OTYwOTMtMzIuNTUwNzgxLS44MjgxMjYtMTUuMTI4OTA3LTQuNDY0ODQzLTI3LjQyMTg3NS0xNC41NDI5NjgtMzYuNTQ2ODc1LTI5LjkxMDE1Ni01LjgxNjQwNi05LjgxMjUtMTYuMTI1LTIwLjQ1MzEyNS0yNi44Nzg5MDYtMTkuNjcxODc1bC0yLjYzNjcxOS0yOS44ODI4MTJjMjMuMjUzOTA2LTEuOTkyMTg4IDQzLjM3MTA5MyAxNC4xNjc5NjkgNTUuMzEyNSAzNC4yMzA0NjkgNS4zMDQ2ODcgOC45MjE4NzQgMTEuNDEwMTU2IDE0LjE1MjM0MyAxOS4yNDYwOTMgMTYuNDY0ODQzIDcuNTc0MjE5IDIuMjMwNDY5IDE1LjcwNzAzMiAxLjE2MDE1NyAyNS4xODM1OTQtMi4xODc1IDIuMzc4OTA2LTE4Ljk3MjY1NiAxMS4wNzAzMTMtMjYuMDc0MjE5IDE3LjYzNjcxOS0zNi4wNzQyMTl2LS4wMTU2MjRjLTY2LjY3OTY4Ny05Ljk0NTMxMy05My4yNTM5MDYtNDUuMzIwMzEzLTEwMy44MDA3ODEtNzMuMjQyMTg4LTEzLjk3NjU2My0zNy4wNzQyMTktNi40NzY1NjMtODMuMzkwNjI1IDE4LjIzODI4MS0xMTIuNjYwMTU2LjQ4MDQ2OS0uNTcwMzEzIDEuMzQ3NjU2LTIuMDYyNSAxLjAxMTcxOS0zLjEwNTQ2OS0xMS4zMzIwMzItMzQuMjMwNDY5IDIuNDc2NTYyLTYyLjU0Njg3NSAyLjk4NDM3NS02NS41NTA3ODEgMTMuMDc4MTI1IDMuODY3MTg3IDE1LjIwMzEyNS0zLjg5MDYyNSA1Ni44MDg1OTMgMjEuMzg2NzE4bDcuMTkxNDA3IDQuMzIwMzEzYzMuMDA3ODEyIDEuNzkyOTY5IDIuMDYyNS43Njk1MzEgNS4wNzAzMTIuNTQyOTY5IDE3LjM3MTA5NC00LjcxODc1IDM1LjY4MzU5NC03LjMyNDIxOSA1My43MjY1NjMtNy41NTg1OTQgMTguMTc5Njg3LjIzNDM3NSAzNi4zNzUgMi44Mzk4NDQgNTQuNDY0ODQ0IDcuNzVsMi4zMjgxMjQuMjM0Mzc1Yy0uMjAzMTI0LS4wMzEyNS42MzI4MTMtLjE0ODQzNyAyLjAzNTE1Ny0uOTg0Mzc1IDUxLjk3MjY1Ni0zMS40ODA0NjkgNTAuMTA1NDY5LTIxLjE5MTQwNiA2NC4wNDI5NjktMjUuNzIyNjU2LjUwMzkwNiAzLjAwNzgxMiAxNC4xMjg5MDYgMzEuNzg1MTU2IDIuOTE3OTY4IDY1LjU4MjAzMS0xLjUxMTcxOCA0LjY1NjI1IDQ1LjA1ODU5NCA0Ny4zMDA3ODEgMTkuMjQ2MDk0IDExNS43NTM5MDYtMTAuNTQ2ODc1IDI3LjkzMzU5NC0zNy4xMTcxODggNjMuMzA4NTk0LTEwMy43OTY4NzUgNzMuMjUzOTA3di4wMTU2MjRjOC41NDY4NzUgMTMuMDI3MzQ0IDE4LjgxNjQwNiAxOS45NTcwMzIgMTguNzYxNzE5IDQ2LjgzMjAzMnYxMDUuNzIyNjU2YzExMS44MDg1OTQtMjcuMDE1NjI1IDE5Ni0xMzYuMDExNzE5IDE5Ni0yNTYgLjAwMzkwNi0xNDAuNjA5Mzc1LTExNS4zODY3MTktMjU2LTI1NS45OTYwOTQtMjU2em0wIDAiLz48L3N2Zz4=" />
+                        </a>
+                    </p>
+                </div>
+                <div id="lw3">
+                    <a href="../../index.html#projects">Vissza a portfólióhoz</a>
+                </div>
+            </div>
+            <div id="ytsection" class="unshow">
+                <div class="close-wrapper">
+                    <img alt="close icon" onclick="closingyt()" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDU1LjExMSA0NTUuMTExIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0NTUuMTExIDQ1NS4xMTE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxjaXJjbGUgc3R5bGU9ImZpbGw6I0UyNEM0QjsiIGN4PSIyMjcuNTU2IiBjeT0iMjI3LjU1NiIgcj0iMjI3LjU1NiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0QxNDAzRjsiIGQ9Ik00NTUuMTExLDIyNy41NTZjMCwxMjUuMTU2LTEwMi40LDIyNy41NTYtMjI3LjU1NiwyMjcuNTU2Yy03Mi41MzMsMC0xMzYuNTMzLTMyLjcxMS0xNzcuNzc4LTg1LjMzMw0KCWMzOC40LDMxLjI4OSw4OC4xNzgsNDkuNzc4LDE0Mi4yMjIsNDkuNzc4YzEyNS4xNTYsMCwyMjcuNTU2LTEwMi40LDIyNy41NTYtMjI3LjU1NmMwLTU0LjA0NC0xOC40ODktMTAzLjgyMi00OS43NzgtMTQyLjIyMg0KCUM0MjIuNCw5MS4wMjIsNDU1LjExMSwxNTUuMDIyLDQ1NS4xMTEsMjI3LjU1NnoiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBkPSJNMzMxLjM3OCwzMzEuMzc4Yy04LjUzMyw4LjUzMy0yMi43NTYsOC41MzMtMzEuMjg5LDBsLTcyLjUzMy03Mi41MzNsLTcyLjUzMyw3Mi41MzMNCgljLTguNTMzLDguNTMzLTIyLjc1Niw4LjUzMy0zMS4yODksMGMtOC41MzMtOC41MzMtOC41MzMtMjIuNzU2LDAtMzEuMjg5bDcyLjUzMy03Mi41MzNsLTcyLjUzMy03Mi41MzMNCgljLTguNTMzLTguNTMzLTguNTMzLTIyLjc1NiwwLTMxLjI4OWM4LjUzMy04LjUzMywyMi43NTYtOC41MzMsMzEuMjg5LDBsNzIuNTMzLDcyLjUzM2w3Mi41MzMtNzIuNTMzDQoJYzguNTMzLTguNTMzLDIyLjc1Ni04LjUzMywzMS4yODksMGM4LjUzMyw4LjUzMyw4LjUzMywyMi43NTYsMCwzMS4yODlsLTcyLjUzMyw3Mi41MzNsNzIuNTMzLDcyLjUzMw0KCUMzMzkuOTExLDMwOC42MjIsMzM5LjkxMSwzMjIuODQ0LDMzMS4zNzgsMzMxLjM3OHoiLz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" />
+                </div>
+                <div>
+                    <iframe loading="lazy" class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/rnhdnL2ei9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <section class="section1">
+                <div style="margin-left:10px;" class="main-container">
+                    <h3>A projektről:</h3>
+                    <div id="skills">
+                    <p>
+                       A projekt .NET frameworkben készült, konzolos alkalmazás, egyszerű menüvel kiegészítve.</p>
+                    <p> 
+                        A projekt célja egy megfelelően rétegzett architektúra elkészítése volt, a felhasználói felülettől
+                       leválasztott üzleti logika és adatbáziskezelő dll-ekkel. A logika számára az adatbázis elérést repositoryn keresztül érem el a Repository tervezési mintának megfelelően.
+                       A project sql first megközelítést alkalmaz. 
+                    </p>
+
+                    <p>A teszteléshez a NUnit keretrendszert használtam, kiegészítve a Moq keretrendszerrel. Az üzleti logika metódusait teszteltem. A logika repository objektumát mockoltam.</p>
+                     </div>
+                    <h4>Felhasznált technológiák:</h4>
+                    <div class="skills" id="skills">
+                        <div class="skills-content">
+                            <ul>
+                                <li>
+                                    <img alt=".net icon" src="data:image/svg+xml;base64,PHN2ZyBpZD0iY29sb3IiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im0yMSAxaC0xOGMtMS42NTQgMC0zIDEuMzQ2LTMgM3YxNmMwIDEuNjU0IDEuMzQ2IDMgMyAzaDE4YzEuNjU0IDAgMy0xLjM0NiAzLTN2LTE2YzAtMS42NTQtMS4zNDYtMy0zLTN6IiBmaWxsPSIjNjA3ZDhiIi8+PHBhdGggZD0ibTIxIDIxaC0xOGMtLjU1MSAwLTEtLjQ0OC0xLTF2LTE0aDIwdjE0YzAgLjU1Mi0uNDQ5IDEtMSAxeiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Im0xMiAxaC05Yy0xLjY1NCAwLTMgMS4zNDYtMyAzdjE2YzAgMS42NTQgMS4zNDYgMyAzIDNoOXYtMmgtOWMtLjU1MSAwLTEtLjQ0OC0xLTF2LTE0aDEweiIgZmlsbD0iIzU0NmQ3OSIvPjxwYXRoIGQ9Im0xMiA2aC0xMHYxNGMwIC41NTIuNDQ5IDEgMSAxaDl6IiBmaWxsPSIjZGVkZWRlIi8+PGcgZmlsbD0iIzIxOTZmMyI+PGNpcmNsZSBjeD0iMy43NSIgY3k9IjE2LjI1IiByPSIuNzUiLz48cGF0aCBkPSJtMTQuMjUgMTQuNzVoLTIuNWMtLjQxNCAwLS40MTQtMS41IDAtMS41aDIuNWMuNDE0IDAgLjc1LjMzNi43NS43NXMtLjMzNi43NS0uNzUuNzV6Ii8+PHBhdGggZD0ibTE0LjI1IDE3aC0xLjVjLS45NjUgMC0xLjc1LS43ODUtMS43NS0xLjc1di0yLjVjMC0uOTY1Ljc4NS0xLjc1IDEuNzUtMS43NWgxLjVjLjQxNCAwIC43NS4zMzYuNzUuNzVzLS4zMzYuNzUtLjc1Ljc1aC0xLjVjLS4xMzggMC0uMjUuMTEyLS4yNS4yNXYyLjVjMCAuMTM4LjExMi4yNS4yNS4yNWgxLjVjLjQxNCAwIC43NS4zMzYuNzUuNzVzLS4zMzYuNzUtLjc1Ljc1eiIvPjxwYXRoIGQ9Im05LjI1IDE3Yy0uMjY4IDAtLjUyMS0uMTQ0LS42NTYtLjM4NmwtMS4wOTQtMS45Njl2MS42MDVjMCAuNDE0LS4zMzYuNzUtLjc1Ljc1cy0uNzUtLjMzNi0uNzUtLjc1di00LjVjMC0uMzQyLjIzMS0uNjQxLjU2Mi0uNzI2LjMyOS0uMDg4LjY3Ny4wNjIuODQ0LjM2MWwxLjA5NCAxLjk3di0xLjYwNWMwLS40MTQuMzM2LS43NS43NS0uNzVzLjc1LjMzNi43NS43NXY0LjVjMCAuMzQyLS4yMzEuNjQxLS41NjIuNzI2eiIvPjxwYXRoIGQ9Im0xOC41IDE3Yy0uNDE0IDAtLjc1LS4zMzYtLjc1LS43NXYtNC41YzAtLjQxNCAxLjUtLjQxNCAxLjUgMHY0LjVjMCAuNDE0LS4zMzYuNzUtLjc1Ljc1eiIvPjxwYXRoIGQ9Im0yMC4yNSAxMi41aC0zLjVjLS40MTQgMC0uNzUtLjMzNi0uNzUtLjc1cy4zMzYtLjc1Ljc1LS43NWgzLjVjLjQxNCAwIC43NS4zMzYuNzUuNzVzLS4zMzYuNzUtLjc1Ljc1eiIvPjwvZz48cGF0aCBkPSJtMTUgMTRoLTIuNXYuNzVoMS43NWMuNDE0IDAgLjc1LS4zMzYuNzUtLjc1eiIgZmlsbD0iIzFkODNkNCIvPjxwYXRoIGQ9Im0xMi41IDE0aC0xLjV2MS4yNWMwIC45NjUuNzg1IDEuNzUgMS43NSAxLjc1aDEuNWMuNDE0IDAgLjc1LS4zMzYuNzUtLjc1cy0uMzM2LS43NS0uNzUtLjc1aC0xLjVjLS4xMzggMC0uMjUtLjExMi0uMjUtLjI1di0uNXoiIGZpbGw9IiMxZDgzZDQiLz48cGF0aCBkPSJtMTAgMTRoLTR2Mi4yNWMwIC40MTQuMzM2Ljc1Ljc1Ljc1cy43NS0uMzM2Ljc1LS43NXYtMS42MDVsMS4wOTQgMS45N2MuMTM1LjI0MS4zODguMzg1LjY1Ni4zODVsLjE4OC0uMDI0Yy4zMzEtLjA4NS41NjItLjM4NC41NjItLjcyNnoiIGZpbGw9IiMxZDgzZDQiLz48cGF0aCBkPSJtMTkuMjUgMTRoLTEuNXYyLjI1YzAgLjQxNC4zMzYuNzUuNzUuNzVzLjc1LS4zMzYuNzUtLjc1eiIgZmlsbD0iIzFkODNkNCIvPjwvc3ZnPg==" />
+                                </li>
+                                <li>
+                                    <span id="prog3_sprite_1" />
+                                </li>
+                                <li>
+                                    <span id="prog3_sprite_2" />
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span  id="prog3_sprite_3" />
+                                </li>
+                                <li>
+                                    <span id="prog3_sprite_4" />
+                                </li>
+                                <li>
+                                    <span id="prog3_sprite_5" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img alt="kép1" src="images/title.JPG">
+                </div>
+                <div class="mySlides fade">
+                    <img alt="kép 2 feltöltés alatt" src="">
+                </div>
+                <div class="mySlides fade">
+                    <img alt="kép 3 feltöltés alatt" src="">
+                </div>
+                <div class="mySlides fade">
+                    <img alt="kép 4 feltöltés alatt" src="">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+    </section>
+    <script src="../../scripts/projectscript_min.js"></script>
+</body>
+</html>
